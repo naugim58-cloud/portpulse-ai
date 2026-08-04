@@ -40,3 +40,5 @@ body.tourism-theme .brand-mark span,body.tourism-theme .port-mode-dot{background
 @media (max-width:420px){.metrics{grid-template-columns:1fr}.metric .value{font-size:26px}.topbar .icon-button{display:none}.detail-data,.twocol{grid-template-columns:1fr}.map-main-head{display:block}.map-main-head .badge{display:inline-block;margin-top:9px}}
 
 @media(max-width:767px){#menu{display:block;cursor:pointer}.side.open:after{content:'';position:fixed;left:250px;right:0;top:0;bottom:0;background:rgba(8,27,51,.22);pointer-events:none}}
+
+.sidebar-close{display:none}@media(max-width:767px){.side .brand{position:relative}.sidebar-close{display:grid;place-items:center;position:absolute;right:0;top:-5px;width:30px;height:30px;border:1px solid #ffffff55;border-radius:8px;background:#ffffff18;color:#fff;font-size:22px;line-height:1;cursor:pointer}.sidebar-close:hover{background:#ffffff30}}
