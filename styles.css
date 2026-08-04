@@ -48,3 +48,5 @@ body.tourism-theme .brand-mark span,body.tourism-theme .port-mode-dot{background
 .image-logo-mark{width:52px;height:40px;background:#fff;border-radius:7px;display:grid!important;place-items:center;overflow:hidden;flex:none}.image-logo-mark img{display:block;width:100%;height:100%;object-fit:contain}.tourism-theme .image-logo-mark{background:#fff}.brand:has(.image-logo-mark){align-items:center}@media(max-width:650px){.image-logo-mark{width:48px;height:36px}}
 
 .mark.image-logo-mark{width:52px!important;height:40px!important;background:#fff!important;border-radius:7px;display:grid!important;place-items:center;overflow:hidden}.mark.image-logo-mark img{width:100%;height:100%;object-fit:contain;display:block}
+
+body.tourism-theme .brand-sub{color:#081b33!important;text-shadow:none}
