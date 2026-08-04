@@ -1,0 +1,2 @@
+function refreshFavoriteVisuals(){document.querySelectorAll('[data-favorite]').forEach(btn=>{const on=isFavorite(btn.dataset.favorite);btn.classList.toggle('active',on);btn.textContent=on?'★':'☆';btn.setAttribute('aria-label',on?'즐겨찾기 해제':'즐겨찾기 추가')})}
+toggleFavorite=function(name){favoritePorts=isFavorite(name)?favoritePorts.filter(x=>x!==name):[...favoritePorts,name];try{localStorage.setItem('portpulse-favorites',JSON.stringify(favoritePorts))}catch(e){}refreshFavoriteVisuals();if(!document.querySelector('.basic-port-card'))render()};
