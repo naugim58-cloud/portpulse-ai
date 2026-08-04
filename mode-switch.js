@@ -1,0 +1,2 @@
+function ensureModeSwitch(){const actions=document.querySelector('.topbar-actions');if(!actions)return;let button=document.getElementById('modeSwitch');if(!button){button=document.createElement('button');button.id='modeSwitch';button.className='mode-switch';button.type='button';button.onclick=()=>{if(!document.getElementById('modeOverlay'))modeOverlay()};actions.insertBefore(button,actions.firstChild)}button.innerHTML=`◉ ${activeMode==='tourism'?'관광 모드':'물류 모드'}　변경`}
+const switchBaseRender=render;render=function(){switchBaseRender();ensureModeSwitch()};

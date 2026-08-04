@@ -1,0 +1,2 @@
+function updateSideMode(){const portStrong=document.querySelector('.port strong');if(!portStrong)return;portStrong.innerHTML=`<button class="port-mode" id="portModeButton"><span class="port-mode-dot">●</span> ${activeMode==='tourism'?'관광 모드':activeMode==='logistics'?'물류 모드':'모드 선택'} <span class="port-mode-chevron">⌄</span></button>`;document.getElementById('portModeButton').onclick=()=>{if(!document.getElementById('modeOverlay'))modeOverlay()}}
+const sideModeBaseRender=render;render=function(){sideModeBaseRender();updateSideMode()};updateSideMode();
