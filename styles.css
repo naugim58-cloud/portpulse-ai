@@ -61,3 +61,5 @@ body.tourism-theme .brand-sub{color:#081b33!important;text-shadow:none}
 
 /* Restore left-corner favorite placement */
 .port-card-head,.basic-port-title{position:relative!important;padding-left:30px!important}.port-card-head .favorite-toggle,.basic-port-title .favorite-toggle{position:absolute!important;left:0!important;top:0!important;display:block!important;margin:0!important;z-index:2}.port-card-head>div,.basic-port-title>div{display:block}.port-card-head .favorite-toggle.active,.basic-port-title .favorite-toggle.active{color:#f2b93d!important}
+
+.brand-sub{color:#081b33!important}
