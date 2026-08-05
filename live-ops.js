@@ -7,7 +7,7 @@
   const format = (value) => { const d = String(value || '').replace(/[^0-9]/g, ''); return d.length >= 12 ? d.slice(4, 8) + ' ' + d.slice(8, 10) + ':' + d.slice(10, 12) : '실시간 확인'; };
   const applyData=(data)=>{
     if (!data || !Array.isArray(data.records) || !data.records.length || typeof ships === 'undefined') return;
-    const liveShips = data.records.map((v) => { const destination = v.destinationPort || v.nextPort || ''; const port = destinationPort(destination); return port ? [v.vesselName || '선박명 미상', port, v.departurePort || '출발지 미상', format(v.entryAt || v.expectedDepartureAt), '실시간', destination] : null; }).filter(Boolean);
+    const liveShips = data.records.map((v) => { const destination = v.destinationPort || v.nextPort || '목적지 확인 필요'; const port = portFor(v.portName); return port ? [v.vesselName || '선박명 미상', port, v.departurePort || '출발지 미상', format(v.entryAt || v.expectedDepartureAt), '실시간', destination] : null; }).filter(Boolean);
     if (!liveShips.length) {
       if (activeMode && typeof ships !== 'undefined') {
         ships.splice(0, ships.length, ...(activeMode === 'tourism' ? [['부산 관광 목적지 데이터 없음','관광 모드','부산 항만 목적지가 명시된 선박 없음','실시간 확인','-']] : [['부산 물류 목적지 데이터 없음','물류 모드','부산 항만 목적지가 명시된 선박 없음','실시간 확인','-']]));
