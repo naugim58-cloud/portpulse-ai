@@ -8,17 +8,18 @@
   const num = (v) => { const n = Number(String(v ?? '').replace(/[% ,]/g, '')); return Number.isFinite(n) ? n : null; };
   const portAliases = {
     '부산신항': ['부산신항', '신항'],
-    '북항': ['북항', '부산항'],
+    '북항': ['북항'],
     '감천항': ['감천항'],
     '다대포항': ['다대포항'],
-    '남항': ['남항']
+    '남항': ['남항'],
+    '영도 크루즈터미널': ['영도 크루즈', '영도터미널', '영도 크루즈터미널']
   };
   const findPort = (name) => {
     const value = String(name || '');
     const exact = Object.keys(portAliases).find((port) => portAliases[port].some((alias) => value.includes(alias)));
-    // The public operations feed reports “부산” at city level. Keep those
-    // observations visible by assigning them to the representative North Port.
-    return exact || (value.includes('부산') ? '북항' : '');
+    // City-level “부산” records do not identify a specific port, so they are
+    // excluded rather than incorrectly inflating North Port's score.
+    return exact || '';
   };
   const isInbound = (record) => /입항|입港|inbound|arrival|entry/i.test(String(record.entryType || record.direction || '')) || /부산|busan/i.test(String(record.destinationPort || record.nextPort || ''));
   const weatherPressure = (weather) => {
