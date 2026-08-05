@@ -22,6 +22,7 @@
     return exact || '';
   };
   const isInbound = (record) => /입항|입港|inbound|arrival|entry/i.test(String(record.entryType || record.direction || '')) || /부산|busan/i.test(String(record.destinationPort || record.nextPort || ''));
+  const isCruise = (record) => /크루즈|cruise|여객|터미널|ferry|passenger|of the seas|spectrum|voyager|oasis|quantum/i.test([record.vesselName,record.shipType,record.vesselType].join(' '));
   const weatherPressure = (weather) => {
     if (!weather || weather.error) return 0;
     const wind = num(weather.windSpeedKn) || 0;
@@ -57,8 +58,12 @@
   const applyVesselSnapshot = (data) => {
     const records = Array.isArray(data.records) ? data.records : [];
     if (!records.length || typeof ports === 'undefined') return false;
+    const modeRecords = activeMode === 'tourism' ? records.filter(isCruise) : activeMode === 'logistics' ? records.filter((r) => !isCruise(r)) : records;
     const grouped = Object.fromEntries(Object.keys(portAliases).map((name) => [name, []]));
-    records.forEach((record) => { const port = findPort(record.portName || record.destinationPort); if (port) grouped[port].push(record); });
+    modeRecords.forEach((record) => { const port = findPort(record.portName || record.destinationPort); if (port) grouped[port].push(record); });
+    // The public feed often reports only the Busan area. Use that area-level
+    // count for North Port, while keeping cruise/logistics counts separate by mode.
+    if (!grouped['북항'].length) grouped['북항'] = modeRecords.filter((record) => /부산|busan/i.test(String(record.portName || '')));
     const counts = Object.fromEntries(Object.keys(grouped).map((name) => [name, grouped[name].length]));
     const inbound = Object.fromEntries(Object.keys(grouped).map((name) => [name, grouped[name].filter(isInbound).length]));
     const maxCount = Math.max(1, ...Object.values(counts));
@@ -66,7 +71,7 @@
     const meta = {};
     ports.forEach((p, i) => {
       const name = p[0];
-      const density = (counts[name] || 0) / maxCount * 100;
+      const density = name === '북항' ? clamp((counts[name] || 0) / 40 * 100) : (counts[name] || 0) / maxCount * 100;
       // Measure inbound concentration within each port's observed traffic.
       // Using the busiest port as the denominator made a single inbound
       // vessel score 100 when only one inbound record existed.
@@ -75,9 +80,12 @@
       const weather = weatherPressure(data.weather && data.weather[name]);
       // Deterministic lightweight model: live AIS signals are dominant;
       // waiting, weather and the known port operating baseline fill gaps.
-      const score = clamp(density * 0.40 + arrivalPressure * 0.20 + waitingPressure * 0.20 + weather * 0.10 + congestionScore(i) * 0.10);
+      const cruiseCount = grouped[name].filter(isCruise).length;
+      const logisticsCount = Math.max(0, (counts[name] || 0) - cruiseCount);
+      const typePressure = name === '북항' ? clamp((logisticsCount + cruiseCount * 1.25) / 40 * 100) : congestionScore(i);
+      const score = clamp(density * 0.40 + arrivalPressure * 0.20 + waitingPressure * 0.20 + weather * 0.10 + typePressure * 0.10);
       scores[i] = score;
-      meta[name] = { vesselCount: counts[name] || 0, inboundCount: inbound[name] || 0, densityScore: clamp(density), arrivalPressure: clamp(arrivalPressure), waitingPressure: clamp(waitingPressure), weatherPressure: weather };
+      meta[name] = { vesselCount: counts[name] || 0, inboundCount: inbound[name] || 0, cruiseCount, logisticsCount, densityScore: clamp(density), arrivalPressure: clamp(arrivalPressure), waitingPressure: clamp(waitingPressure), weatherPressure: weather };
       // Use observed AIS count in cards instead of the old demo count.
       if (counts[name]) p[4] = counts[name];
     });
