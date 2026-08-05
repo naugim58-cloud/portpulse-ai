@@ -83,9 +83,14 @@
       const cruiseCount = grouped[name].filter(isCruise).length;
       const logisticsCount = Math.max(0, (counts[name] || 0) - cruiseCount);
       const typePressure = name === '북항' ? clamp((logisticsCount + cruiseCount * 1.25) / 40 * 100) : congestionScore(i);
-      const score = clamp(density * 0.40 + arrivalPressure * 0.20 + waitingPressure * 0.20 + weather * 0.10 + typePressure * 0.10);
+      const aisPoints = Math.round(density * 0.40);
+      const inboundPoints = Math.round(arrivalPressure * 0.20);
+      const waitingPoints = Math.round(waitingPressure * 0.20);
+      const weatherPoints = Math.round(weather * 0.10);
+      const typePoints = Math.round(typePressure * 0.10);
+      const score = clamp(aisPoints + inboundPoints + waitingPoints + weatherPoints + typePoints);
       scores[i] = score;
-      meta[name] = { vesselCount: counts[name] || 0, inboundCount: inbound[name] || 0, cruiseCount, logisticsCount, densityScore: clamp(density), arrivalPressure: clamp(arrivalPressure), waitingPressure: clamp(waitingPressure), weatherPressure: weather };
+      meta[name] = { vesselCount: counts[name] || 0, inboundCount: inbound[name] || 0, cruiseCount, logisticsCount, densityScore: clamp(density), arrivalPressure: clamp(arrivalPressure), waitingPressure: clamp(waitingPressure), weatherPressure: weather, aisPoints, inboundPoints, waitingPoints, weatherPoints, typePoints };
       // Use observed AIS count in cards instead of the old demo count.
       if (counts[name]) p[4] = counts[name];
     });
