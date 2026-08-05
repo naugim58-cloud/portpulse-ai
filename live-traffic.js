@@ -61,13 +61,15 @@
     const counts = Object.fromEntries(Object.keys(grouped).map((name) => [name, grouped[name].length]));
     const inbound = Object.fromEntries(Object.keys(grouped).map((name) => [name, grouped[name].filter(isInbound).length]));
     const maxCount = Math.max(1, ...Object.values(counts));
-    const maxInbound = Math.max(1, ...Object.values(inbound));
     const scores = {};
     const meta = {};
     ports.forEach((p, i) => {
       const name = p[0];
       const density = (counts[name] || 0) / maxCount * 100;
-      const arrivalPressure = (inbound[name] || 0) / maxInbound * 100;
+      // Measure inbound concentration within each port's observed traffic.
+      // Using the busiest port as the denominator made a single inbound
+      // vessel score 100 when only one inbound record existed.
+      const arrivalPressure = (inbound[name] || 0) / Math.max(1, counts[name] || 0) * 100;
       const waitingPressure = (p[5] / 180) * 100;
       const weather = weatherPressure(data.weather && data.weather[name]);
       // Deterministic lightweight model: live AIS signals are dominant;
