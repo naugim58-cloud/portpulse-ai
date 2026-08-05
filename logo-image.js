@@ -4,6 +4,8 @@ const firebaseConfigScript=document.createElement('script');firebaseConfigScript
 const languageScript=document.createElement('script');languageScript.src='language-sync.js?v=3';document.body.appendChild(languageScript);
 const compareCleanup=document.createElement('script');compareCleanup.src='remove-compare.js?v=1';document.body.appendChild(compareCleanup);
 const peakFix=document.createElement('script');peakFix.src='home-peak-fix.js?v=2';document.body.appendChild(peakFix);
+const brandFix=document.createElement('script');brandFix.src='brand-fix.js?v=1';document.body.appendChild(brandFix);
+const googleAuth=document.createElement('script');googleAuth.src='google-auth.js?v=1';document.body.appendChild(googleAuth);
 (()=>{const update=()=>{const now=new Date(),s=new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).format(now);document.querySelectorAll('.live-clock').forEach(e=>{e.textContent='◷ '+formatKoreanNow()});const h=document.querySelector('header main');document.querySelector('header>div:last-child')?.replaceChildren(document.createTextNode('● LIVE · '+s+' KST　♢　⚙'))};update();setInterval(update,1000)})();
 (()=>{const update=()=>{const nav=document.querySelector('nav button[data-r="alerts"]'),badge=nav?.querySelector('em');if(!badge)return;let count=0;if(typeof ports!=='undefined'&&typeof isFavorite==='function'){const names=ports.filter(p=>isFavorite(p[0])).map(p=>p[0]);count+=names.length;if(typeof ships!=='undefined')count+=ships.filter(s=>names.includes(s[1])).length}badge.textContent=String(count);badge.hidden=count===0};update();setInterval(update,1000)})();
 

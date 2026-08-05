@@ -1,0 +1,1 @@
+(function(){const fix=()=>{const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),a=[];while(w.nextNode())a.push(w.currentNode);a.forEach(n=>{n.nodeValue=n.nodeValue.replace(/PORTFLOW AI/g,'PORTPULSE AI')})};fix();setInterval(fix,1000)})();
