@@ -5,6 +5,8 @@ const languageRemovalScript=document.createElement('script');languageRemovalScri
 const portCountScript=document.createElement('script');portCountScript.src='port-count-fix.js?v=1';document.body.appendChild(portCountScript);
 const liveEtaScript=document.createElement('script');liveEtaScript.src='live-ops.js?v=2';document.body.appendChild(liveEtaScript);
 const liveModeEtaScript=document.createElement('script');liveModeEtaScript.src='live-mode-eta-fix.js?v=1';document.body.appendChild(liveModeEtaScript);
+const etaTypeScript=document.createElement('script');etaTypeScript.src='eta-type-filter.js?v=1';document.body.appendChild(etaTypeScript);
+const etaTypeStyle=document.createElement('link');etaTypeStyle.rel='stylesheet';etaTypeStyle.href='eta-type-filter.css?v=1';document.head.appendChild(etaTypeStyle);
 const liveAlertsScript=document.createElement('script');liveAlertsScript.src='live-alerts-fix.js?v=1';document.body.appendChild(liveAlertsScript);
 const compareCleanup=document.createElement('script');compareCleanup.src='remove-compare.js?v=1';document.body.appendChild(compareCleanup);
 const peakFix=document.createElement('script');peakFix.src='home-peak-fix.js?v=4';document.body.appendChild(peakFix);
