@@ -7,7 +7,9 @@
     if (!data || !Array.isArray(data.records) || !data.records.length || typeof ships === 'undefined') return;
     const liveShips = data.records.map((v) => { const port = portFor(v.portName); return port ? [v.vesselName || '선박명 미상', port, v.departurePort || '부산항 관제권', format(v.entryAt || v.expectedDepartureAt), '실시간'] : null; }).filter(Boolean);
     if (!liveShips.length) return;
-    ships.splice(0, ships.length, ...liveShips);
+    window.liveEtaShips = liveShips;
+    const allowed = typeof activeMode === 'undefined' || !activeMode ? liveShips : liveShips.filter(v => (activeMode === 'tourism' ? ['북항','다대포항','영도 크루즈터미널'] : ['부산신항','북항','감천항','남항']).includes(v[1]));
+    ships.splice(0, ships.length, ...(allowed.length ? allowed : liveShips));
     if (typeof render === 'function') render();
     document.documentElement.dataset.liveOps = 'ready';
     document.documentElement.dataset.liveOpsUpdated = data.updatedAt || '';
