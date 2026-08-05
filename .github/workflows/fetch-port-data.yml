@@ -1,9 +1,12 @@
+Exit code: 0
+Wall time: 0.6 seconds
+Output:
 name: Fetch Busan vessel operations
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -16,6 +19,7 @@ jobs:
       - name: Fetch approved public-data API
         env:
           DATA_GO_KR_SERVICE_KEY: ${{ secrets.DATA_GO_KR_SERVICE_KEY }}
+          KOMSA_REALTIME_SERVICE_KEY: ${{ secrets.KOMSA_REALTIME_SERVICE_KEY }}
         run: |
           python - <<'PY'
           import json, os
@@ -29,7 +33,7 @@ jobs:
           start = now.strftime('%Y%m%d')
           end = (now + timedelta(days=1)).strftime('%Y%m%d')
           key = os.environ.get('DATA_GO_KR_SERVICE_KEY', '').strip()
-          result = {'updatedAt': now.isoformat(timespec='seconds'), 'source': '해양수산부_선박운항정보', 'endpoint': 'https://apis.data.go.kr/1192000/VsslEtrynd5/Info5', 'records': [], 'weather': {}, 'weatherSource': '기상청 해양기상정보 기준 · Open-Meteo Marine 실시간 관측/예보', 'weatherEndpoint': 'https://marine-api.open-meteo.com/v1/marine'}
+          result = {'updatedAt': now.isoformat(timespec='seconds'), 'source': '해양수산부_선박운항정보', 'endpoint': 'https://apis.data.go.kr/1192000/VsslEtrynd5/Info5', 'records': [], 'traffic': {'source': '한국해양교통안전공단_실시간 교통정보', 'endpoint': 'https://apis.data.go.kr/B554035/realtime/get_realtime', 'updatedAt': now.isoformat(timespec='seconds'), 'records': []}}
 
           if key:
               params = 'serviceKey=' + quote(key, safe='%') + '&pageNo=1&numOfRows=50&prtAgCd=020&sde=' + start + '&ede=' + end + '&deGb=I'
@@ -46,36 +50,50 @@ jobs:
           else:
               result['error'] = 'DATA_GO_KR_SERVICE_KEY secret is not configured'
 
-          # 부산항 각 권역의 해상 상태를 15분마다 함께 갱신합니다.
-          # 기상청 해양기상정보 화면에서 제공하는 핵심 항목(풍향·풍속·파고·파주기)에 맞춰 저장합니다.
-          ports = {
-              '부산신항': (35.05, 128.83), '북항': (35.11, 129.04),
-              '감천항': (35.05, 129.01), '다대포항': (35.04, 128.97),
-              '남항': (35.08, 129.03), '영도 크루즈터미널': (35.08, 129.07)
-          }
-          def direction(deg):
-              names = ['북','북동','동','남동','남','남서','서','북서']
-              return names[int(((float(deg) + 22.5) % 360) // 45)] if deg is not None else '미상'
-          for port, (lat, lon) in ports.items():
+          # MTIS 실시간 해양교통정보(5분 단위)를 혼잡도 보정용으로 수집합니다.
+          traffic_key = os.environ.get('KOMSA_REALTIME_SERVICE_KEY', '').strip()
+          if traffic_key:
+              traffic_params = 'serviceKey=' + quote(traffic_key, safe='%') + '&pageNo=1&numOfRows=500&dataType=JSON'
               try:
-                  marine_url = 'https://marine-api.open-meteo.com/v1/marine?latitude=' + str(lat) + '&longitude=' + str(lon) + '&current=wave_height,wave_direction,wave_period,swell_wave_height&hourly=wave_height,wave_direction,wave_period&forecast_days=2&timezone=Asia%2FSeoul'
-                  weather_url = 'https://api.open-meteo.com/v1/forecast?latitude=' + str(lat) + '&longitude=' + str(lon) + '&current=wind_speed_10m,wind_direction_10m,temperature_2m&timezone=Asia%2FSeoul'
-                  with urlopen(marine_url, timeout=30) as response:
-                      marine = json.loads(response.read().decode('utf-8'))
-                  with urlopen(weather_url, timeout=30) as response:
-                      surface = json.loads(response.read().decode('utf-8'))
-                  cur = marine.get('current', {})
-                  wind = surface.get('current', {})
-                  hourly = marine.get('hourly', {})
-                  result['weather'][port] = {
-                      'latitude': lat, 'longitude': lon, 'observedAt': cur.get('time') or wind.get('time'),
-                      'windDirection': direction(wind.get('wind_direction_10m')), 'windDirectionDeg': wind.get('wind_direction_10m'),
-                      'windSpeedKn': round(float(wind.get('wind_speed_10m', 0)) * 0.539957, 1),
-                      'temperatureC': wind.get('temperature_2m'), 'waveHeightM': cur.get('wave_height'),
-                      'waveDirectionDeg': cur.get('wave_direction'), 'wavePeriodS': cur.get('wave_period'),
-                      'swellHeightM': cur.get('swell_wave_height'),
-                      'forecast': [{'time': t, 'waveHeightM': h, 'wavePeriodS': p} for t, h, p in zip(hourly.get('time', [])[:24], hourly.get('wave_height', [])[:24], hourly.get('wave_period', [])[:24])]
-                  }
+                  with urlopen('https://apis.data.go.kr/B554035/realtime/get_realtime?' + traffic_params, timeout=30) as response:
+                      payload = json.loads(response.read().decode('utf-8'))
+                  body = payload.get('response', {}).get('body', payload.get('body', payload)) if isinstance(payload, dict) else {}
+                  def as_items(value):
+                      if isinstance(value, list): return value
+                      if isinstance(value, dict):
+                          for key_name in ('items', 'item', 'data', 'rows', 'records', 'result'):
+                              if key_name in value:
+                                  found = as_items(value[key_name])
+                                  if found: return found
+                          if any(k in value for k in ('density', 'vesselCount', 'shipCount', 'cnt', '선박척수', '밀집도')): return [value]
+                      return []
+                  def pick(item, names):
+                      for name in names:
+                          if name in item and item[name] not in (None, ''): return item[name]
+                      return None
+                  normalized = []
+                  for item in as_items(body):
+                      if not isinstance(item, dict): continue
+                      normalized.append({'latitude': pick(item, ('lat','latitude','위도','y')), 'longitude': pick(item, ('lon','lng','longitude','경도','x')), 'vesselCount': pick(item, ('vesselCount','shipCount','shipCnt','vsslCnt','cnt','선박척수','선박수')), 'density': pick(item, ('density','trafficDensity','congestion','밀집도','혼잡도')), 'gridLevel': pick(item, ('gridLevel','level','격자단계')), 'observedAt': pick(item, ('observedAt','baseDateTime','dateTime','일시','시간'))})
+                  result['traffic']['records'] = normalized
+                  result['traffic']['recordCount'] = len(normalized)
+                  result['traffic']['rawStatus'] = payload.get('response', {}).get('header', {}).get('resultCode', '') if isinstance(payload, dict) else ''
+              except Exception as exc:
+                  result['traffic']['error'] = str(exc)
+          else:
+              result['traffic']['error'] = 'KOMSA_REALTIME_SERVICE_KEY secret is not configured'
+
+          # 부산항 권역의 해상 기상도 같은 스냅샷에 저장합니다.
+          result['weather'] = {}
+          result['weatherSource'] = 'Open-Meteo Marine 실시간 관측/예보'
+          for port, (lat, lon) in {'부산신항': (35.05,128.83), '북항': (35.11,129.04), '감천항': (35.05,129.01), '다대포항': (35.04,128.97), '남항': (35.08,129.03), '영도 크루즈터미널': (35.08,129.07)}.items():
+              try:
+                  marine_url = f'https://marine-api.open-meteo.com/v1/marine?latitude={lat}&longitude={lon}&current=wave_height,wave_direction,wave_period,swell_wave_height&hourly=wave_height,wave_period&forecast_days=2&timezone=Asia%2FSeoul'
+                  weather_url = f'https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=wind_speed_10m,wind_direction_10m,temperature_2m&timezone=Asia%2FSeoul'
+                  with urlopen(marine_url, timeout=30) as response: marine = json.loads(response.read().decode('utf-8'))
+                  with urlopen(weather_url, timeout=30) as response: surface = json.loads(response.read().decode('utf-8'))
+                  cur, wind = marine.get('current', {}), surface.get('current', {})
+                  result['weather'][port] = {'latitude':lat,'longitude':lon,'observedAt':cur.get('time') or wind.get('time'),'windSpeedKn':round(float(wind.get('wind_speed_10m',0))*0.539957,1),'windDirectionDeg':wind.get('wind_direction_10m'),'temperatureC':wind.get('temperature_2m'),'waveHeightM':cur.get('wave_height'),'waveDirectionDeg':cur.get('wave_direction'),'wavePeriodS':cur.get('wave_period'),'swellHeightM':cur.get('swell_wave_height')}
               except Exception as exc:
                   result['weather'][port] = {'error': str(exc)}
 
@@ -88,3 +106,4 @@ jobs:
           git add assets/live-vessel-data.json
           git diff --cached --quiet || git commit -m "chore: refresh vessel operations data"
           git push
+
