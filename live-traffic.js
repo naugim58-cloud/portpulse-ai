@@ -36,7 +36,11 @@
     window.congestionInputs = meta;
     window.liveTraffic = snapshot;
     window.congestionModel = 'AIS 입출항 + 접안대기 + 물동량 + 기상 기반 추정';
-    window.congestionScore = (i) => Object.prototype.hasOwnProperty.call(window.liveTrafficScores, i) ? window.liveTrafficScores[i] : baseScore(i);
+    window.congestionScore = (i) => {
+      const p = typeof ports !== 'undefined' ? ports[i] : null;
+      const detail = p && window.congestionInputs && window.congestionInputs[p[0]];
+      return detail && Number.isFinite(detail.totalPoints) ? detail.totalPoints : (Object.prototype.hasOwnProperty.call(window.liveTrafficScores, i) ? window.liveTrafficScores[i] : baseScore(i));
+    };
     if (typeof render === 'function') render();
     document.querySelectorAll('.detail-note').forEach((el) => { el.textContent = '✦ 누적 AIS·입출항·접안대기·기상 데이터를 바탕으로 혼잡도를 계산합니다.'; });
     document.documentElement.dataset.liveTraffic = 'ready';

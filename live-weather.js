@@ -37,5 +37,5 @@
 })();
 
 const trafficScript = document.createElement('script');
-trafficScript.src = 'live-traffic.js?v=3';
+trafficScript.src = 'live-traffic.js?v=4';
 document.body.appendChild(trafficScript);
