@@ -1,657 +1,821 @@
 {
-  "updatedAt": "2026-08-05T10:12:03+09:00",
+  "updatedAt": "2026-08-05T10:21:06+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
-  "records": [
-    {
-      "portName": "부산",
-      "vesselName": "티와이 인천",
-      "callSign": "D8TI",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "CHIBA",
-      "nextPort": "인천",
-      "destinationPort": "인천",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
+  "records": [],
+  "weather": {
+    "부산신항": {
+      "latitude": 35.05,
+      "longitude": 128.83,
+      "observedAt": "2026-08-05T10:15",
+      "windDirection": "동",
+      "windDirectionDeg": 75,
+      "windSpeedKn": 6.6,
+      "temperatureC": 29.2,
+      "waveHeightM": 0.44,
+      "waveDirectionDeg": 85,
+      "wavePeriodS": 3.75,
+      "swellHeightM": 0.3,
+      "forecast": [
+        {
+          "time": "2026-08-05T00:00",
+          "waveHeightM": 0.48,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T01:00",
+          "waveHeightM": 0.46,
+          "wavePeriodS": 4.1
+        },
+        {
+          "time": "2026-08-05T02:00",
+          "waveHeightM": 0.42,
+          "wavePeriodS": 4.05
+        },
+        {
+          "time": "2026-08-05T03:00",
+          "waveHeightM": 0.4,
+          "wavePeriodS": 4.0
+        },
+        {
+          "time": "2026-08-05T04:00",
+          "waveHeightM": 0.38,
+          "wavePeriodS": 4.0
+        },
+        {
+          "time": "2026-08-05T05:00",
+          "waveHeightM": 0.38,
+          "wavePeriodS": 4.0
+        },
+        {
+          "time": "2026-08-05T06:00",
+          "waveHeightM": 0.36,
+          "wavePeriodS": 4.0
+        },
+        {
+          "time": "2026-08-05T07:00",
+          "waveHeightM": 0.36,
+          "wavePeriodS": 4.0
+        },
+        {
+          "time": "2026-08-05T08:00",
+          "waveHeightM": 0.38,
+          "wavePeriodS": 4.0
+        },
+        {
+          "time": "2026-08-05T09:00",
+          "waveHeightM": 0.38,
+          "wavePeriodS": 3.95
+        },
+        {
+          "time": "2026-08-05T10:00",
+          "waveHeightM": 0.42,
+          "wavePeriodS": 3.8
+        },
+        {
+          "time": "2026-08-05T11:00",
+          "waveHeightM": 0.48,
+          "wavePeriodS": 3.55
+        },
+        {
+          "time": "2026-08-05T12:00",
+          "waveHeightM": 0.52,
+          "wavePeriodS": 3.4
+        },
+        {
+          "time": "2026-08-05T13:00",
+          "waveHeightM": 0.56,
+          "wavePeriodS": 3.35
+        },
+        {
+          "time": "2026-08-05T14:00",
+          "waveHeightM": 0.6,
+          "wavePeriodS": 3.4
+        },
+        {
+          "time": "2026-08-05T15:00",
+          "waveHeightM": 0.64,
+          "wavePeriodS": 3.45
+        },
+        {
+          "time": "2026-08-05T16:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 3.5
+        },
+        {
+          "time": "2026-08-05T17:00",
+          "waveHeightM": 0.7,
+          "wavePeriodS": 3.6
+        },
+        {
+          "time": "2026-08-05T18:00",
+          "waveHeightM": 0.72,
+          "wavePeriodS": 3.65
+        },
+        {
+          "time": "2026-08-05T19:00",
+          "waveHeightM": 0.7,
+          "wavePeriodS": 3.7
+        },
+        {
+          "time": "2026-08-05T20:00",
+          "waveHeightM": 0.68,
+          "wavePeriodS": 3.7
+        },
+        {
+          "time": "2026-08-05T21:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 3.75
+        },
+        {
+          "time": "2026-08-05T22:00",
+          "waveHeightM": 0.62,
+          "wavePeriodS": 3.8
+        },
+        {
+          "time": "2026-08-05T23:00",
+          "waveHeightM": 0.58,
+          "wavePeriodS": 3.85
+        }
+      ]
     },
-    {
-      "portName": "부산",
-      "vesselName": "제8우진호",
-      "callSign": "212838",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "울산",
-      "nextPort": "마산",
-      "destinationPort": "마산",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
+    "북항": {
+      "latitude": 35.11,
+      "longitude": 129.04,
+      "observedAt": "2026-08-05T10:15",
+      "windDirection": "북동",
+      "windDirectionDeg": 60,
+      "windSpeedKn": 10.4,
+      "temperatureC": 29.1,
+      "waveHeightM": 0.54,
+      "waveDirectionDeg": 77,
+      "wavePeriodS": 4.25,
+      "swellHeightM": 0.42,
+      "forecast": [
+        {
+          "time": "2026-08-05T00:00",
+          "waveHeightM": 0.6,
+          "wavePeriodS": 4.85
+        },
+        {
+          "time": "2026-08-05T01:00",
+          "waveHeightM": 0.58,
+          "wavePeriodS": 4.8
+        },
+        {
+          "time": "2026-08-05T02:00",
+          "waveHeightM": 0.54,
+          "wavePeriodS": 4.75
+        },
+        {
+          "time": "2026-08-05T03:00",
+          "waveHeightM": 0.52,
+          "wavePeriodS": 4.7
+        },
+        {
+          "time": "2026-08-05T04:00",
+          "waveHeightM": 0.5,
+          "wavePeriodS": 4.7
+        },
+        {
+          "time": "2026-08-05T05:00",
+          "waveHeightM": 0.5,
+          "wavePeriodS": 4.7
+        },
+        {
+          "time": "2026-08-05T06:00",
+          "waveHeightM": 0.48,
+          "wavePeriodS": 4.65
+        },
+        {
+          "time": "2026-08-05T07:00",
+          "waveHeightM": 0.5,
+          "wavePeriodS": 4.55
+        },
+        {
+          "time": "2026-08-05T08:00",
+          "waveHeightM": 0.5,
+          "wavePeriodS": 4.45
+        },
+        {
+          "time": "2026-08-05T09:00",
+          "waveHeightM": 0.52,
+          "wavePeriodS": 4.35
+        },
+        {
+          "time": "2026-08-05T10:00",
+          "waveHeightM": 0.54,
+          "wavePeriodS": 4.25
+        },
+        {
+          "time": "2026-08-05T11:00",
+          "waveHeightM": 0.54,
+          "wavePeriodS": 4.15
+        },
+        {
+          "time": "2026-08-05T12:00",
+          "waveHeightM": 0.56,
+          "wavePeriodS": 4.1
+        },
+        {
+          "time": "2026-08-05T13:00",
+          "waveHeightM": 0.58,
+          "wavePeriodS": 4.05
+        },
+        {
+          "time": "2026-08-05T14:00",
+          "waveHeightM": 0.62,
+          "wavePeriodS": 4.0
+        },
+        {
+          "time": "2026-08-05T15:00",
+          "waveHeightM": 0.64,
+          "wavePeriodS": 4.0
+        },
+        {
+          "time": "2026-08-05T16:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 4.0
+        },
+        {
+          "time": "2026-08-05T17:00",
+          "waveHeightM": 0.68,
+          "wavePeriodS": 4.0
+        },
+        {
+          "time": "2026-08-05T18:00",
+          "waveHeightM": 0.7,
+          "wavePeriodS": 4.05
+        },
+        {
+          "time": "2026-08-05T19:00",
+          "waveHeightM": 0.68,
+          "wavePeriodS": 4.1
+        },
+        {
+          "time": "2026-08-05T20:00",
+          "waveHeightM": 0.68,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T21:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 4.25
+        },
+        {
+          "time": "2026-08-05T22:00",
+          "waveHeightM": 0.64,
+          "wavePeriodS": 4.3
+        },
+        {
+          "time": "2026-08-05T23:00",
+          "waveHeightM": 0.64,
+          "wavePeriodS": 4.35
+        }
+      ]
     },
-    {
-      "portName": "부산",
-      "vesselName": "고려 5005호",
-      "callSign": "086100",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
+    "감천항": {
+      "latitude": 35.05,
+      "longitude": 129.01,
+      "observedAt": "2026-08-05T10:15",
+      "windDirection": "북동",
+      "windDirectionDeg": 64,
+      "windSpeedKn": 12.4,
+      "temperatureC": 28.8,
+      "waveHeightM": 0.72,
+      "waveDirectionDeg": 67,
+      "wavePeriodS": 4.25,
+      "swellHeightM": 0.4,
+      "forecast": [
+        {
+          "time": "2026-08-05T00:00",
+          "waveHeightM": 0.84,
+          "wavePeriodS": 4.85
+        },
+        {
+          "time": "2026-08-05T01:00",
+          "waveHeightM": 0.8,
+          "wavePeriodS": 4.8
+        },
+        {
+          "time": "2026-08-05T02:00",
+          "waveHeightM": 0.74,
+          "wavePeriodS": 4.7
+        },
+        {
+          "time": "2026-08-05T03:00",
+          "waveHeightM": 0.7,
+          "wavePeriodS": 4.65
+        },
+        {
+          "time": "2026-08-05T04:00",
+          "waveHeightM": 0.68,
+          "wavePeriodS": 4.65
+        },
+        {
+          "time": "2026-08-05T05:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 4.65
+        },
+        {
+          "time": "2026-08-05T06:00",
+          "waveHeightM": 0.64,
+          "wavePeriodS": 4.6
+        },
+        {
+          "time": "2026-08-05T07:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 4.5
+        },
+        {
+          "time": "2026-08-05T08:00",
+          "waveHeightM": 0.68,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T09:00",
+          "waveHeightM": 0.7,
+          "wavePeriodS": 4.3
+        },
+        {
+          "time": "2026-08-05T10:00",
+          "waveHeightM": 0.72,
+          "wavePeriodS": 4.25
+        },
+        {
+          "time": "2026-08-05T11:00",
+          "waveHeightM": 0.74,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T12:00",
+          "waveHeightM": 0.76,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T13:00",
+          "waveHeightM": 0.8,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T14:00",
+          "waveHeightM": 0.86,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T15:00",
+          "waveHeightM": 0.9,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T16:00",
+          "waveHeightM": 0.94,
+          "wavePeriodS": 4.25
+        },
+        {
+          "time": "2026-08-05T17:00",
+          "waveHeightM": 0.96,
+          "wavePeriodS": 4.3
+        },
+        {
+          "time": "2026-08-05T18:00",
+          "waveHeightM": 1.0,
+          "wavePeriodS": 4.35
+        },
+        {
+          "time": "2026-08-05T19:00",
+          "waveHeightM": 0.98,
+          "wavePeriodS": 4.35
+        },
+        {
+          "time": "2026-08-05T20:00",
+          "waveHeightM": 0.98,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T21:00",
+          "waveHeightM": 0.96,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T22:00",
+          "waveHeightM": 0.92,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T23:00",
+          "waveHeightM": 0.86,
+          "wavePeriodS": 4.45
+        }
+      ]
     },
-    {
-      "portName": "부산",
-      "vesselName": "일광8002호",
-      "callSign": "110011",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
+    "다대포항": {
+      "latitude": 35.04,
+      "longitude": 128.97,
+      "observedAt": "2026-08-05T10:15",
+      "windDirection": "북동",
+      "windDirectionDeg": 64,
+      "windSpeedKn": 12.4,
+      "temperatureC": 28.4,
+      "waveHeightM": 0.64,
+      "waveDirectionDeg": 75,
+      "wavePeriodS": 4.0,
+      "swellHeightM": 0.36,
+      "forecast": [
+        {
+          "time": "2026-08-05T00:00",
+          "waveHeightM": 0.7,
+          "wavePeriodS": 4.65
+        },
+        {
+          "time": "2026-08-05T01:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 4.6
+        },
+        {
+          "time": "2026-08-05T02:00",
+          "waveHeightM": 0.62,
+          "wavePeriodS": 4.5
+        },
+        {
+          "time": "2026-08-05T03:00",
+          "waveHeightM": 0.58,
+          "wavePeriodS": 4.45
+        },
+        {
+          "time": "2026-08-05T04:00",
+          "waveHeightM": 0.56,
+          "wavePeriodS": 4.45
+        },
+        {
+          "time": "2026-08-05T05:00",
+          "waveHeightM": 0.54,
+          "wavePeriodS": 4.45
+        },
+        {
+          "time": "2026-08-05T06:00",
+          "waveHeightM": 0.52,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T07:00",
+          "waveHeightM": 0.54,
+          "wavePeriodS": 4.35
+        },
+        {
+          "time": "2026-08-05T08:00",
+          "waveHeightM": 0.56,
+          "wavePeriodS": 4.25
+        },
+        {
+          "time": "2026-08-05T09:00",
+          "waveHeightM": 0.58,
+          "wavePeriodS": 4.15
+        },
+        {
+          "time": "2026-08-05T10:00",
+          "waveHeightM": 0.62,
+          "wavePeriodS": 4.05
+        },
+        {
+          "time": "2026-08-05T11:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 3.9
+        },
+        {
+          "time": "2026-08-05T12:00",
+          "waveHeightM": 0.7,
+          "wavePeriodS": 3.85
+        },
+        {
+          "time": "2026-08-05T13:00",
+          "waveHeightM": 0.74,
+          "wavePeriodS": 3.85
+        },
+        {
+          "time": "2026-08-05T14:00",
+          "waveHeightM": 0.78,
+          "wavePeriodS": 3.9
+        },
+        {
+          "time": "2026-08-05T15:00",
+          "waveHeightM": 0.82,
+          "wavePeriodS": 3.95
+        },
+        {
+          "time": "2026-08-05T16:00",
+          "waveHeightM": 0.86,
+          "wavePeriodS": 4.0
+        },
+        {
+          "time": "2026-08-05T17:00",
+          "waveHeightM": 0.88,
+          "wavePeriodS": 4.05
+        },
+        {
+          "time": "2026-08-05T18:00",
+          "waveHeightM": 0.92,
+          "wavePeriodS": 4.1
+        },
+        {
+          "time": "2026-08-05T19:00",
+          "waveHeightM": 0.9,
+          "wavePeriodS": 4.1
+        },
+        {
+          "time": "2026-08-05T20:00",
+          "waveHeightM": 0.88,
+          "wavePeriodS": 4.15
+        },
+        {
+          "time": "2026-08-05T21:00",
+          "waveHeightM": 0.86,
+          "wavePeriodS": 4.15
+        },
+        {
+          "time": "2026-08-05T22:00",
+          "waveHeightM": 0.82,
+          "wavePeriodS": 4.15
+        },
+        {
+          "time": "2026-08-05T23:00",
+          "waveHeightM": 0.76,
+          "wavePeriodS": 4.2
+        }
+      ]
     },
-    {
-      "portName": "부산",
-      "vesselName": "강남6003호",
-      "callSign": "140038",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
+    "남항": {
+      "latitude": 35.08,
+      "longitude": 129.03,
+      "observedAt": "2026-08-05T10:15",
+      "windDirection": "북동",
+      "windDirectionDeg": 67,
+      "windSpeedKn": 7.6,
+      "temperatureC": 29.8,
+      "waveHeightM": 0.72,
+      "waveDirectionDeg": 67,
+      "wavePeriodS": 4.25,
+      "swellHeightM": 0.4,
+      "forecast": [
+        {
+          "time": "2026-08-05T00:00",
+          "waveHeightM": 0.84,
+          "wavePeriodS": 4.85
+        },
+        {
+          "time": "2026-08-05T01:00",
+          "waveHeightM": 0.8,
+          "wavePeriodS": 4.8
+        },
+        {
+          "time": "2026-08-05T02:00",
+          "waveHeightM": 0.74,
+          "wavePeriodS": 4.7
+        },
+        {
+          "time": "2026-08-05T03:00",
+          "waveHeightM": 0.7,
+          "wavePeriodS": 4.65
+        },
+        {
+          "time": "2026-08-05T04:00",
+          "waveHeightM": 0.68,
+          "wavePeriodS": 4.65
+        },
+        {
+          "time": "2026-08-05T05:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 4.65
+        },
+        {
+          "time": "2026-08-05T06:00",
+          "waveHeightM": 0.64,
+          "wavePeriodS": 4.6
+        },
+        {
+          "time": "2026-08-05T07:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 4.5
+        },
+        {
+          "time": "2026-08-05T08:00",
+          "waveHeightM": 0.68,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T09:00",
+          "waveHeightM": 0.7,
+          "wavePeriodS": 4.3
+        },
+        {
+          "time": "2026-08-05T10:00",
+          "waveHeightM": 0.72,
+          "wavePeriodS": 4.25
+        },
+        {
+          "time": "2026-08-05T11:00",
+          "waveHeightM": 0.74,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T12:00",
+          "waveHeightM": 0.76,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T13:00",
+          "waveHeightM": 0.8,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T14:00",
+          "waveHeightM": 0.86,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T15:00",
+          "waveHeightM": 0.9,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T16:00",
+          "waveHeightM": 0.94,
+          "wavePeriodS": 4.25
+        },
+        {
+          "time": "2026-08-05T17:00",
+          "waveHeightM": 0.96,
+          "wavePeriodS": 4.3
+        },
+        {
+          "time": "2026-08-05T18:00",
+          "waveHeightM": 1.0,
+          "wavePeriodS": 4.35
+        },
+        {
+          "time": "2026-08-05T19:00",
+          "waveHeightM": 0.98,
+          "wavePeriodS": 4.35
+        },
+        {
+          "time": "2026-08-05T20:00",
+          "waveHeightM": 0.98,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T21:00",
+          "waveHeightM": 0.96,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T22:00",
+          "waveHeightM": 0.92,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T23:00",
+          "waveHeightM": 0.86,
+          "wavePeriodS": 4.45
+        }
+      ]
     },
-    {
-      "portName": "부산",
-      "vesselName": "블루오션",
-      "callSign": "244807",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "울산",
-      "nextPort": "울산",
-      "destinationPort": "울산",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "JIA DE",
-      "callSign": "BPZP5",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "TOYAMASHINKO",
-      "nextPort": "NIIGATA",
-      "destinationPort": "NIIGATA",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "비케이 25",
-      "callSign": "240026",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "울산",
-      "nextPort": "울산",
-      "destinationPort": "울산",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "36한진호",
-      "callSign": "202809",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "여수",
-      "nextPort": "여수",
-      "destinationPort": "여수",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "JI YONG",
-      "callSign": "3E8459",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "광양",
-      "nextPort": "TOKYO",
-      "destinationPort": "TOKYO",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "MSC SHIVALIKA III",
-      "callSign": "A8WZ8",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "HAIPHONG",
-      "nextPort": "QINGDAO",
-      "destinationPort": "QINGDAO",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "퍼시픽 베이징",
-      "callSign": "9V8000",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "NINGBO",
-      "nextPort": "울산",
-      "destinationPort": "NINGBO",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "RISING SUN",
-      "callSign": "7JKU",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "MISUMI, SHIMANE",
-      "nextPort": "NEWCASTLE",
-      "destinationPort": "NEWCASTLE",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "ONE FALCON",
-      "callSign": "7KGU",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "QINGDAO",
-      "nextPort": "LAEM CHABANG",
-      "destinationPort": "LAEM CHABANG",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "스타 파이오니아",
-      "callSign": "D7XJ",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "SHANGHAI",
-      "nextPort": "울산",
-      "destinationPort": "SHANGHAI",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "ZHONG WAI YUN NINGBO",
-      "callSign": "BOAK2",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "ZHANGJIAGANG",
-      "nextPort": "광양",
-      "destinationPort": "NANJING",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "MSC ANIELLO",
-      "callSign": "3FYW9",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "NAGOYA, AICHI",
-      "nextPort": "NINGBO",
-      "destinationPort": "NINGBO",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "인트란스 에디",
-      "callSign": "141033",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "여수",
-      "nextPort": "마산",
-      "destinationPort": "여수",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "FULLONG",
-      "callSign": "C6KU4",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "RIZHAO",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "오사카 보이저",
-      "callSign": "D7AA",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "HAMADA",
-      "nextPort": "옥계항",
-      "destinationPort": "옥계항",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "PANCON VICTORY",
-      "callSign": "D7CC",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "QINGDAO",
-      "nextPort": "광양",
-      "destinationPort": "광양",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "제101삼일호",
-      "callSign": "071203",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "기타항",
-      "nextPort": "기타항",
-      "destinationPort": "기타항",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "FU ZHI",
-      "callSign": "3E3650",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "DONGJIAKOU",
-      "nextPort": "OCEAN DISTRICT",
-      "destinationPort": "OCEAN DISTRICT",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "세주파이오니아호",
-      "callSign": "018817",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "제주",
-      "nextPort": "제주",
-      "destinationPort": "제주",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "SPECTRUM OF THE SEAS",
-      "callSign": "5BDR6",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "SHANGHAI",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "HANSUNG WEIHAI",
-      "callSign": "3E8662",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "TOKUYAMA",
-      "nextPort": "IMABARI",
-      "destinationPort": "IYOMISHIMA",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "SEASPAN HARMONY",
-      "callSign": "9VMX6",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "YANGSHAN",
-      "nextPort": "NEW YORK",
-      "destinationPort": "NEW YORK",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "SMART FUTURE",
-      "callSign": "VRYC2",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "당진",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "HAMAYUU",
-      "callSign": "JM6512",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "SHIMONOSEKI",
-      "nextPort": "SHIMONOSEKI",
-      "destinationPort": "SHIMONOSEKI",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "써니 달리아",
-      "callSign": "D7UA",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "IWAKUNI",
-      "nextPort": "IYOMISHIMA",
-      "destinationPort": "IYOMISHIMA",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "고베 트레이더",
-      "callSign": "D7ID",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "VLADIVOSTOK",
-      "nextPort": "인천",
-      "destinationPort": "부산",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "제1한미르호",
-      "callSign": "DSNA3",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "울산",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "화정에이스",
-      "callSign": "202813",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "여수",
-      "nextPort": "여수",
-      "destinationPort": "여수",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "HESTIANA",
-      "callSign": "3EAW4",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "MOJI/KITAKYUSHU",
-      "nextPort": "대산",
-      "destinationPort": "대산",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "NACC VEGA",
-      "callSign": "CQ2895",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "HONG KONG",
-      "nextPort": "MATSUURA, NAGASAKI",
-      "destinationPort": "MATSUURA, NAGASAKI",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "HENG HONG 5",
-      "callSign": "BOVF7",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "OCEAN DISTRICT",
-      "nextPort": "ZHOUSHAN",
-      "destinationPort": "OCEAN DISTRICT",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "SM NINGBO",
-      "callSign": "D7FG",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "광양",
-      "nextPort": "QINGDAO",
-      "destinationPort": "QINGDAO",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "109효동케미",
-      "callSign": "D7CA",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "KAOHSIUNG",
-      "nextPort": "MUTSURE",
-      "destinationPort": "MUTSURE",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "골든 브리지 하나",
-      "callSign": "D7RV",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "NANTONG",
-      "nextPort": "CHIBA",
-      "destinationPort": "CHIBA",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "이에스 릴리",
-      "callSign": "170022",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "대산",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "세창비너스",
-      "callSign": "200024",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "여수",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "KM JAKARTA",
-      "callSign": "D5OR9",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "RIZHAO",
-      "nextPort": "VANCOUVER",
-      "destinationPort": "VANCOUVER",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "VIENNA EXPRESS",
-      "callSign": "5LMA3",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "NINGBO",
-      "nextPort": "TACOMA",
-      "destinationPort": "TACOMA",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "YM WEALTH",
-      "callSign": "A8EI4",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "QINGDAO",
-      "nextPort": "VANCOUVER",
-      "destinationPort": "TACOMA",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "KOKA MARU",
-      "callSign": "A8SJ4",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "CHANGSHU PT",
-      "nextPort": "CHIBA",
-      "destinationPort": "CHIBA",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "PACIFIC WORLD",
-      "callSign": "3EOI6",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "NAGASAKI",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "TNS DEFENDER",
-      "callSign": "HOA5675",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "KORSAKOV",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "MSC AURIGA",
-      "callSign": "CQEB7",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "SHANGHAI",
-      "nextPort": "RODMAN",
-      "destinationPort": "RODMAN",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "써니 클로버",
-      "callSign": "D8FA",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "울산",
-      "nextPort": "TIANJIN XINGANG PT",
-      "destinationPort": "TIANJIN XINGANG PT",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "MSC ERICA",
-      "callSign": "D5ML4",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "TIANJIN XINGANG PT",
-      "nextPort": "NINGBO",
-      "destinationPort": "NINGBO",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
+    "영도 크루즈터미널": {
+      "latitude": 35.08,
+      "longitude": 129.07,
+      "observedAt": "2026-08-05T10:15",
+      "windDirection": "북동",
+      "windDirectionDeg": 60,
+      "windSpeedKn": 10.4,
+      "temperatureC": 28.8,
+      "waveHeightM": 0.72,
+      "waveDirectionDeg": 67,
+      "wavePeriodS": 4.25,
+      "swellHeightM": 0.4,
+      "forecast": [
+        {
+          "time": "2026-08-05T00:00",
+          "waveHeightM": 0.84,
+          "wavePeriodS": 4.85
+        },
+        {
+          "time": "2026-08-05T01:00",
+          "waveHeightM": 0.8,
+          "wavePeriodS": 4.8
+        },
+        {
+          "time": "2026-08-05T02:00",
+          "waveHeightM": 0.74,
+          "wavePeriodS": 4.7
+        },
+        {
+          "time": "2026-08-05T03:00",
+          "waveHeightM": 0.7,
+          "wavePeriodS": 4.65
+        },
+        {
+          "time": "2026-08-05T04:00",
+          "waveHeightM": 0.68,
+          "wavePeriodS": 4.65
+        },
+        {
+          "time": "2026-08-05T05:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 4.65
+        },
+        {
+          "time": "2026-08-05T06:00",
+          "waveHeightM": 0.64,
+          "wavePeriodS": 4.6
+        },
+        {
+          "time": "2026-08-05T07:00",
+          "waveHeightM": 0.66,
+          "wavePeriodS": 4.5
+        },
+        {
+          "time": "2026-08-05T08:00",
+          "waveHeightM": 0.68,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T09:00",
+          "waveHeightM": 0.7,
+          "wavePeriodS": 4.3
+        },
+        {
+          "time": "2026-08-05T10:00",
+          "waveHeightM": 0.72,
+          "wavePeriodS": 4.25
+        },
+        {
+          "time": "2026-08-05T11:00",
+          "waveHeightM": 0.74,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T12:00",
+          "waveHeightM": 0.76,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T13:00",
+          "waveHeightM": 0.8,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T14:00",
+          "waveHeightM": 0.86,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T15:00",
+          "waveHeightM": 0.9,
+          "wavePeriodS": 4.2
+        },
+        {
+          "time": "2026-08-05T16:00",
+          "waveHeightM": 0.94,
+          "wavePeriodS": 4.25
+        },
+        {
+          "time": "2026-08-05T17:00",
+          "waveHeightM": 0.96,
+          "wavePeriodS": 4.3
+        },
+        {
+          "time": "2026-08-05T18:00",
+          "waveHeightM": 1.0,
+          "wavePeriodS": 4.35
+        },
+        {
+          "time": "2026-08-05T19:00",
+          "waveHeightM": 0.98,
+          "wavePeriodS": 4.35
+        },
+        {
+          "time": "2026-08-05T20:00",
+          "waveHeightM": 0.98,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T21:00",
+          "waveHeightM": 0.96,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T22:00",
+          "waveHeightM": 0.92,
+          "wavePeriodS": 4.4
+        },
+        {
+          "time": "2026-08-05T23:00",
+          "waveHeightM": 0.86,
+          "wavePeriodS": 4.45
+        }
+      ]
     }
-  ]
+  },
+  "weatherSource": "기상청 해양기상정보 기준 · Open-Meteo Marine 실시간 관측/예보",
+  "weatherEndpoint": "https://marine-api.open-meteo.com/v1/marine",
+  "error": "<urlopen error timed out>"
 }
