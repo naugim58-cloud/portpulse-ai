@@ -1,2 +1,3 @@
 const logoMark=document.querySelector('.brand-mark');if(logoMark){logoMark.classList.add('image-logo-mark');logoMark.innerHTML='<img src="assets/portpulse-ship-logo.png" alt="PortPulse 로고">'}
+(()=>{const update=()=>{const now=new Date(),s=new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).format(now);document.querySelectorAll('.live-clock').forEach(e=>{e.textContent='◷ '+formatKoreanNow()});const h=document.querySelector('header main');document.querySelector('header>div:last-child')?.replaceChildren(document.createTextNode('● LIVE · '+s+' KST　♢　⚙'))};update();setInterval(update,1000)})();
 
