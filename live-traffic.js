@@ -13,8 +13,14 @@
     '다대포항': ['다대포항'],
     '남항': ['남항']
   };
-  const findPort = (name) => Object.keys(portAliases).find((port) => portAliases[port].some((alias) => String(name || '').includes(alias))) || '';
-  const isInbound = (record) => /입항|입港|inbound|arrival|entry/i.test(String(record.entryType || record.direction || ''));
+  const findPort = (name) => {
+    const value = String(name || '');
+    const exact = Object.keys(portAliases).find((port) => portAliases[port].some((alias) => value.includes(alias)));
+    // The public operations feed reports “부산” at city level. Keep those
+    // observations visible by assigning them to the representative North Port.
+    return exact || (value.includes('부산') ? '북항' : '');
+  };
+  const isInbound = (record) => /입항|입港|inbound|arrival|entry/i.test(String(record.entryType || record.direction || '')) || /부산|busan/i.test(String(record.destinationPort || record.nextPort || ''));
   const weatherPressure = (weather) => {
     if (!weather || weather.error) return 0;
     const wind = num(weather.windSpeedKn) || 0;
