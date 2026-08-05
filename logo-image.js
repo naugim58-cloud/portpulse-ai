@@ -1,7 +1,7 @@
 const logoMark=document.querySelector('.brand-mark');if(logoMark){logoMark.classList.add('image-logo-mark');logoMark.innerHTML='<img src="assets/portpulse-ship-logo.png" alt="PortPulse 로고">'}
 const settingsScript=document.createElement('script');settingsScript.src='settings.js?v=3';document.body.appendChild(settingsScript);
 const firebaseConfigScript=document.createElement('script');firebaseConfigScript.src='firebase-config.js?v=2';document.body.appendChild(firebaseConfigScript);firebaseConfigScript.onload=()=>{const firebaseScript=document.createElement('script');firebaseScript.src='firebase-production.js?v=3';document.body.appendChild(firebaseScript)};
-const languageScript=document.createElement('script');languageScript.src='language-sync.js?v=3';document.body.appendChild(languageScript);
+const languageRemovalScript=document.createElement('script');languageRemovalScript.src='language-removal.js?v=1';document.body.appendChild(languageRemovalScript);
 const compareCleanup=document.createElement('script');compareCleanup.src='remove-compare.js?v=1';document.body.appendChild(compareCleanup);
 const peakFix=document.createElement('script');peakFix.src='home-peak-fix.js?v=4';document.body.appendChild(peakFix);
 const brandFix=document.createElement('script');brandFix.src='brand-fix.js?v=1';document.body.appendChild(brandFix);
