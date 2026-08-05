@@ -1,0 +1,57 @@
+name: Fetch Busan vessel operations
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch approved public-data API
+        env:
+          DATA_GO_KR_SERVICE_KEY: ${{ secrets.DATA_GO_KR_SERVICE_KEY }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+          from urllib.parse import quote
+          from urllib.request import urlopen
+          from xml.etree import ElementTree as ET
+
+          now = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=9)))
+          start = now.strftime('%Y%m%d')
+          end = (now + timedelta(days=1)).strftime('%Y%m%d')
+          key = os.environ.get('DATA_GO_KR_SERVICE_KEY', '').strip()
+          result = {'updatedAt': now.isoformat(timespec='seconds'), 'source': '해양수산부_선박운항정보', 'endpoint': 'https://apis.data.go.kr/1192000/VsslEtrynd5/Info5', 'records': []}
+
+          if key:
+              params = 'serviceKey=' + quote(key, safe='%') + '&pageNo=1&numOfRows=50&prtAgCd=020&sde=' + start + '&ede=' + end + '&deGb=I'
+              try:
+                  with urlopen('https://apis.data.go.kr/1192000/VsslEtrynd5/Info5?' + params, timeout=30) as response:
+                      root = ET.fromstring(response.read())
+                  for item in root.findall('.//item'):
+                      def val(name):
+                          node = item.find(name)
+                          return (node.text or '').strip() if node is not None else ''
+                      result['records'].append({'portName': val('prtAgNm'), 'vesselName': val('vsslNm'), 'callSign': val('clsgn'), 'entryType': val('etryndNm'), 'entryAt': val('etryptDt'), 'departureAt': val('tkoffDt'), 'departurePort': val('prvsDpmprtPrtNm'), 'nextPort': val('nxlnptPrtNm'), 'destinationPort': val('dstnPrtNm'), 'expectedDepartureAt': val('tkoffPrrrnDt'), 'expectedDestinationEntryAt': val('dstnEtryptDt')})
+              except Exception as exc:
+                  result['error'] = str(exc)
+          else:
+              result['error'] = 'DATA_GO_KR_SERVICE_KEY secret is not configured'
+
+          Path('assets/live-vessel-data.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
+          PY
+      - name: Publish refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/live-vessel-data.json
+          git diff --cached --quiet || git commit -m "chore: refresh vessel operations data"
+          git push
