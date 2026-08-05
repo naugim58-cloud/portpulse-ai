@@ -1,6 +1,7 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-08-05T10:08:41+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
-  "records": []
+  "records": [],
+  "error": "DATA_GO_KR_SERVICE_KEY secret is not configured"
 }
