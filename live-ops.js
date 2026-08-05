@@ -5,7 +5,7 @@
   const portFor = (name) => Object.keys(aliases).find((port) => aliases[port].some((alias) => String(name || '').includes(alias))) || (String(name || '').includes('부산') ? '부산항 관제권' : '');
   const isCruise = (v) => /크루즈|cruise|여객|터미널|ferry|passenger|of the seas|spectrum|voyager|oasis|quantum/i.test((v || []).join(' '));
   const format = (value) => { const d = String(value || '').replace(/[^0-9]/g, ''); return d.length >= 12 ? d.slice(4, 8) + ' ' + d.slice(8, 10) + ':' + d.slice(10, 12) : '실시간 확인'; };
-  fetch('assets/live-vessel-data.json?ts=' + Date.now(), {cache:'no-store'}).then((r) => r.ok ? r.json() : null).then((data) => {
+  const applyData=(data)=>{
     if (!data || !Array.isArray(data.records) || !data.records.length || typeof ships === 'undefined') return;
     const liveShips = data.records.map((v) => { const destination = v.destinationPort || v.nextPort || ''; const port = destinationPort(destination); return port ? [v.vesselName || '선박명 미상', port, v.departurePort || '출발지 미상', format(v.entryAt || v.expectedDepartureAt), '실시간', destination] : null; }).filter(Boolean);
     if (!liveShips.length) {
@@ -23,5 +23,9 @@
     if (typeof render === 'function') render();
     document.documentElement.dataset.liveOps = 'ready';
     document.documentElement.dataset.liveOpsUpdated = data.updatedAt || '';
-  }).catch(() => {});
+  };
+  const refresh=()=>fetch('assets/live-vessel-data.json?ts=' + Date.now(), {cache:'no-store'}).then((r) => r.ok ? r.json() : null).then(applyData).catch(() => {});
+  window.refreshLiveEtaData=refresh;
+  refresh();
+  window.addEventListener('portpulse:mode',refresh);
 })();

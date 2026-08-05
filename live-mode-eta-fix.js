@@ -4,6 +4,8 @@
   const baseSelectMode=selectMode;
   selectMode=function(mode){
     baseSelectMode(mode);
+    if(typeof ships!=='undefined'){ships.splice(0,ships.length);if(typeof render==='function')render();}
+    window.dispatchEvent(new Event('portpulse:mode'));
     const allowed=mode==='tourism'?['북항','다대포항','영도 크루즈터미널','부산항 관제권']:['부산신항','북항','감천항','남항','부산항 관제권'];
     const source=window.liveEtaShips||[];
     const live=source.filter(v=>allowed.includes(v[1])&&(mode==='tourism'?isCruise(v):!isCruise(v)));

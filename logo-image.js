@@ -3,8 +3,8 @@ const settingsScript=document.createElement('script');settingsScript.src='settin
 const firebaseConfigScript=document.createElement('script');firebaseConfigScript.src='firebase-config.js?v=2';document.body.appendChild(firebaseConfigScript);firebaseConfigScript.onload=()=>{const firebaseScript=document.createElement('script');firebaseScript.src='firebase-production.js?v=4';document.body.appendChild(firebaseScript)};
 const languageRemovalScript=document.createElement('script');languageRemovalScript.src='language-removal.js?v=1';document.body.appendChild(languageRemovalScript);
 const portCountScript=document.createElement('script');portCountScript.src='port-count-fix.js?v=1';document.body.appendChild(portCountScript);
-const liveEtaScript=document.createElement('script');liveEtaScript.src='live-ops.js?v=3';document.body.appendChild(liveEtaScript);
-const liveModeEtaScript=document.createElement('script');liveModeEtaScript.src='live-mode-eta-fix.js?v=1';document.body.appendChild(liveModeEtaScript);
+const liveEtaScript=document.createElement('script');liveEtaScript.src='live-ops.js?v=4';document.body.appendChild(liveEtaScript);
+const liveModeEtaScript=document.createElement('script');liveModeEtaScript.src='live-mode-eta-fix.js?v=2';document.body.appendChild(liveModeEtaScript);
 const etaPredictionScript=document.createElement('script');etaPredictionScript.src='eta-prediction-fix.js?v=1';document.body.appendChild(etaPredictionScript);
 const etaTypeScript=document.createElement('script');etaTypeScript.src='eta-type-filter.js?v=2';document.body.appendChild(etaTypeScript);
 const etaTypeStyle=document.createElement('link');etaTypeStyle.rel='stylesheet';etaTypeStyle.href='eta-type-filter.css?v=1';document.head.appendChild(etaTypeStyle);
