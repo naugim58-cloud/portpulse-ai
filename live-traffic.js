@@ -81,7 +81,7 @@
     applyScores(scores, meta, { source: 'AIS 선박운항 누적 스냅샷 기반 혼잡도 추정', updatedAt: data.updatedAt, records });
     return true;
   };
-  fetch('assets/live-vessel-data.json?traffic=' + Date.now(), { cache: 'no-store' })
+  const refresh = () => fetch('assets/live-vessel-data.json?traffic=' + Date.now(), { cache: 'no-store' })
     .then((r) => r.ok ? r.json() : null)
     .then((data) => {
       if (!data) return;
@@ -90,4 +90,7 @@
       if (!applyTrafficApi(data.traffic || {})) applyVesselSnapshot(data);
     })
     .catch(() => {});
+  refresh();
+  // Recalculate from the latest sanitized snapshot every 30 minutes.
+  setInterval(refresh, 30 * 60 * 1000);
 })();
