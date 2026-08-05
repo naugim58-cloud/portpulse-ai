@@ -35,3 +35,7 @@
     .then((data) => { if (data && data.weather) apply(data.weather); })
     .catch(() => {});
 })();
+
+const trafficScript = document.createElement('script');
+trafficScript.src = 'live-traffic.js?v=1';
+document.body.appendChild(trafficScript);
