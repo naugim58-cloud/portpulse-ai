@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T10:52:34+09:00",
+  "updatedAt": "2026-08-05T10:12:03+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
   "records": [
@@ -653,88 +653,5 @@
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     }
-  ],
-  "traffic": {
-    "source": "한국해양교통안전공단_실시간 교통정보",
-    "endpoint": "https://apis.data.go.kr/B554035/realtime/get_realtime",
-    "updatedAt": "2026-08-05T10:52:34+09:00",
-    "records": [],
-    "error": "<urlopen error timed out>"
-  },
-  "error": "<urlopen error timed out>",
-  "weather": {
-    "부산신항": {
-      "latitude": 35.05,
-      "longitude": 128.83,
-      "observedAt": "2026-08-05T10:45",
-      "windSpeedKn": 6.9,
-      "windDirectionDeg": 82,
-      "temperatureC": 29.5,
-      "waveHeightM": 0.46,
-      "waveDirectionDeg": 86,
-      "wavePeriodS": 3.6,
-      "swellHeightM": 0.28
-    },
-    "북항": {
-      "latitude": 35.11,
-      "longitude": 129.04,
-      "observedAt": "2026-08-05T10:45",
-      "windSpeedKn": 10.4,
-      "windDirectionDeg": 61,
-      "temperatureC": 29.2,
-      "waveHeightM": 0.54,
-      "waveDirectionDeg": 78,
-      "wavePeriodS": 4.2,
-      "swellHeightM": 0.42
-    },
-    "감천항": {
-      "latitude": 35.05,
-      "longitude": 129.01,
-      "observedAt": "2026-08-05T10:45",
-      "windSpeedKn": 12.7,
-      "windDirectionDeg": 65,
-      "temperatureC": 28.9,
-      "waveHeightM": 0.74,
-      "waveDirectionDeg": 68,
-      "wavePeriodS": 4.2,
-      "swellHeightM": 0.36
-    },
-    "다대포항": {
-      "latitude": 35.04,
-      "longitude": 128.97,
-      "observedAt": "2026-08-05T10:45",
-      "windSpeedKn": 12.7,
-      "windDirectionDeg": 65,
-      "temperatureC": 28.5,
-      "waveHeightM": 0.66,
-      "waveDirectionDeg": 75,
-      "wavePeriodS": 3.95,
-      "swellHeightM": 0.34
-    },
-    "남항": {
-      "latitude": 35.08,
-      "longitude": 129.03,
-      "observedAt": "2026-08-05T10:45",
-      "windSpeedKn": 7.9,
-      "windDirectionDeg": 70,
-      "temperatureC": 30.0,
-      "waveHeightM": 0.74,
-      "waveDirectionDeg": 68,
-      "wavePeriodS": 4.2,
-      "swellHeightM": 0.36
-    },
-    "영도 크루즈터미널": {
-      "latitude": 35.08,
-      "longitude": 129.07,
-      "observedAt": "2026-08-05T10:45",
-      "windSpeedKn": 10.4,
-      "windDirectionDeg": 61,
-      "temperatureC": 28.9,
-      "waveHeightM": 0.74,
-      "waveDirectionDeg": 68,
-      "wavePeriodS": 4.2,
-      "swellHeightM": 0.36
-    }
-  },
-  "weatherSource": "Open-Meteo Marine 실시간 관측/예보"
+  ]
 }
