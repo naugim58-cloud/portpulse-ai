@@ -1,0 +1,2 @@
+#mobileSettings{display:none;border:0;background:none;color:var(--ink);font-size:18px;line-height:1;cursor:pointer;padding:6px}
+@media(max-width:767px){#mobileSettings{display:block;margin-left:auto;margin-right:4px}header{justify-content:flex-start}header>span{max-width:calc(100% - 82px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
