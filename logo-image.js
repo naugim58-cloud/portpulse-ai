@@ -14,6 +14,7 @@ const tourismContrastStyle=document.createElement('link');tourismContrastStyle.r
 const liveAlertsScript=document.createElement('script');liveAlertsScript.src='live-alerts-fix.js?v=1';document.body.appendChild(liveAlertsScript);
 const compareCleanup=document.createElement('script');compareCleanup.src='remove-compare.js?v=1';document.body.appendChild(compareCleanup);
 const peakFix=document.createElement('script');peakFix.src='home-peak-fix.js?v=4';document.body.appendChild(peakFix);
+const homeLiveMetrics=document.createElement('script');homeLiveMetrics.src='home-live-metrics.js?v=1';document.body.appendChild(homeLiveMetrics);
 const brandFix=document.createElement('script');brandFix.src='brand-fix.js?v=1';document.body.appendChild(brandFix);
 const googleAuth=document.createElement('script');googleAuth.src='google-auth.js?v=1';document.body.appendChild(googleAuth);
 (()=>{const update=()=>{const now=new Date(),s=new Intl.DateTimeFormat('ko-KR',{timeZone:'Asia/Seoul',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).format(now);document.querySelectorAll('.live-clock').forEach(e=>{e.textContent='◷ '+formatKoreanNow()});document.querySelector('header>div')?.replaceChildren(document.createTextNode('● LIVE · '+s+' KST'))};update();setInterval(update,1000)})();
