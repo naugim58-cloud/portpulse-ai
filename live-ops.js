@@ -2,7 +2,7 @@
 (function () {
   const aliases = {'부산신항':['부산신항','신항'],'북항':['북항','부산항'],'감천항':['감천항'],'다대포항':['다대포항'],'남항':['남항']};
   const portFor = (name) => Object.keys(aliases).find((port) => aliases[port].some((alias) => String(name || '').includes(alias))) || (String(name || '').includes('부산') ? '부산항 관제권' : '');
-  const isCruise = (v) => /크루즈|cruise|여객|터미널|ferry|passenger/i.test((v || []).join(' '));
+  const isCruise = (v) => /크루즈|cruise|여객|터미널|ferry|passenger|of the seas|spectrum|voyager|oasis|quantum/i.test((v || []).join(' '));
   const format = (value) => { const d = String(value || '').replace(/[^0-9]/g, ''); return d.length >= 12 ? d.slice(4, 8) + ' ' + d.slice(8, 10) + ':' + d.slice(10, 12) : '실시간 확인'; };
   fetch('assets/live-vessel-data.json?ts=' + Date.now(), {cache:'no-store'}).then((r) => r.ok ? r.json() : null).then((data) => {
     if (!data || !Array.isArray(data.records) || !data.records.length || typeof ships === 'undefined') return;

@@ -1,6 +1,6 @@
 (function(){
   let selectedType='all';
-  const isCruise=el=>/크루즈|cruise|여객|터미널|ferry|cruise/i.test(el?.textContent||'');
+  const isCruise=el=>/크루즈|cruise|여객|터미널|ferry|passenger|of the seas|spectrum|voyager|oasis|quantum/i.test(el?.textContent||'');
   const update=()=>{
     if(typeof route==='undefined'||route!=='eta')return;
     const search=document.getElementById('search');

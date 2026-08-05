@@ -1,6 +1,6 @@
 (function(){
   if(typeof selectMode!=='function')return;
-  const isCruise=v=>/크루즈|cruise|여객|터미널|ferry|passenger/i.test((v||[]).join(' '));
+  const isCruise=v=>/크루즈|cruise|여객|터미널|ferry|passenger|of the seas|spectrum|voyager|oasis|quantum/i.test((v||[]).join(' '));
   const baseSelectMode=selectMode;
   selectMode=function(mode){
     baseSelectMode(mode);
