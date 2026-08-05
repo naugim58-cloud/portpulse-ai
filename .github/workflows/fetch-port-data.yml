@@ -16,7 +16,7 @@ jobs:
       - name: Fetch approved public-data API
         env:
           DATA_GO_KR_SERVICE_KEY: ${{ secrets.DATA_GO_KR_SERVICE_KEY }}
-          KOMSA_REALTIME_SERVICE_KEY: ${{ secrets.KOMSA_REALTIME_SERVICE_KEY }}
+          KOMSA_REALTIME_SERVICE_KEY: ${{ secrets.KOMSA_REALTIME_SERVICE_KEY || secrets.DATA_GO_KR_SERVICE_KEY }}
         run: |
           python - <<'PY'
           import json, os
