@@ -90,7 +90,7 @@
       const typePoints = Math.round(typePressure * 0.10);
       const score = clamp(aisPoints + inboundPoints + waitingPoints + weatherPoints + typePoints);
       scores[i] = score;
-      meta[name] = { vesselCount: counts[name] || 0, inboundCount: inbound[name] || 0, cruiseCount, logisticsCount, densityScore: clamp(density), arrivalPressure: clamp(arrivalPressure), waitingPressure: clamp(waitingPressure), weatherPressure: weather, aisPoints, inboundPoints, waitingPoints, weatherPoints, typePoints };
+      meta[name] = { vesselCount: counts[name] || 0, inboundCount: inbound[name] || 0, cruiseCount, logisticsCount, densityScore: clamp(density), arrivalPressure: clamp(arrivalPressure), waitingPressure: clamp(waitingPressure), weatherPressure: weather, aisPoints, inboundPoints, waitingPoints, weatherPoints, typePoints, totalPoints: score };
       // Use observed AIS count in cards instead of the old demo count.
       if (counts[name]) p[4] = counts[name];
     });
