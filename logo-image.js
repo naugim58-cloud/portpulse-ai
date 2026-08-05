@@ -11,7 +11,7 @@ const etaTypeStyle=document.createElement('link');etaTypeStyle.rel='stylesheet';
 const logoModeScript=document.createElement('script');logoModeScript.src='logo-mode-fix.js?v=1';document.body.appendChild(logoModeScript);
 const logoModeStyle=document.createElement('link');logoModeStyle.rel='stylesheet';logoModeStyle.href='logo-mode-bg.css?v=1';document.head.appendChild(logoModeStyle);
 const tourismContrastStyle=document.createElement('link');tourismContrastStyle.rel='stylesheet';tourismContrastStyle.href='tourism-contrast.css?v=1';document.head.appendChild(tourismContrastStyle);
-const liveAlertsScript=document.createElement('script');liveAlertsScript.src='live-alerts-fix.js?v=1';document.body.appendChild(liveAlertsScript);
+const liveAlertsScript=document.createElement('script');liveAlertsScript.src='live-alerts-fix.js?v=2';document.body.appendChild(liveAlertsScript);
 const compareCleanup=document.createElement('script');compareCleanup.src='remove-compare.js?v=1';document.body.appendChild(compareCleanup);
 const peakFix=document.createElement('script');peakFix.src='home-peak-fix.js?v=4';document.body.appendChild(peakFix);
 const homeLiveMetrics=document.createElement('script');homeLiveMetrics.src='home-live-metrics.js?v=1';document.body.appendChild(homeLiveMetrics);
