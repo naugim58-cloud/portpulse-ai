@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T16:16:15+09:00",
+  "updatedAt": "2026-10-17T20:39:47+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
   "records": [
@@ -304,19 +304,6 @@
     },
     {
       "portName": "부산",
-      "vesselName": "ZHONG MENG HANG LIAN",
-      "callSign": "BTJJ2",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "QINHUANGDAO PT",
-      "nextPort": "VANINO",
-      "destinationPort": "VANINO",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
       "vesselName": "MING RUN 15",
       "callSign": "BQIN4",
       "entryType": "",
@@ -390,6 +377,19 @@
       "departurePort": "OAKLAND",
       "nextPort": "광양",
       "destinationPort": "LOS ANGELES",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "ZHONG MENG HANG LIAN",
+      "callSign": "BTJJ2",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "QINHUANGDAO PT",
+      "nextPort": "VANINO",
+      "destinationPort": "VANINO",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -590,19 +590,6 @@
     },
     {
       "portName": "부산",
-      "vesselName": "OOCL SINGAPORE",
-      "callSign": "VRMX7",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "QINGDAO",
-      "nextPort": "XIAMEN",
-      "destinationPort": "XIAMEN",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
       "vesselName": "에스티오 아젤리아",
       "callSign": "DSMA3",
       "entryType": "",
@@ -652,12 +639,25 @@
       "destinationPort": "인천",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "21동방호",
+      "callSign": "210003",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "울산",
+      "nextPort": "울산",
+      "destinationPort": "부산",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
     }
   ],
   "traffic": {
     "source": "한국해양교통안전공단_실시간 교통정보",
     "endpoint": "https://apis.data.go.kr/B554035/realtime/get_realtime",
-    "updatedAt": "2026-10-17T16:16:15+09:00",
+    "updatedAt": "2026-10-17T20:39:47+09:00",
     "records": [
       {
         "latitude": null,
@@ -4667,74 +4667,74 @@
     "부산신항": {
       "latitude": 35.05,
       "longitude": 128.83,
-      "observedAt": "2026-10-17T16:15",
-      "windSpeedKn": 15.2,
-      "windDirectionDeg": 79,
-      "temperatureC": 22.4,
-      "waveHeightM": 0.74,
+      "observedAt": "2026-10-17T20:30",
+      "windSpeedKn": 15.7,
+      "windDirectionDeg": 82,
+      "temperatureC": 21.3,
+      "waveHeightM": 0.88,
       "waveDirectionDeg": 84,
-      "wavePeriodS": 3.6,
-      "swellHeightM": 0.1
+      "wavePeriodS": 4.0,
+      "swellHeightM": 0.08
     },
     "북항": {
       "latitude": 35.11,
       "longitude": 129.04,
-      "observedAt": "2026-10-17T16:15",
-      "windSpeedKn": 12.9,
-      "windDirectionDeg": 72,
-      "temperatureC": 22.4,
-      "waveHeightM": 0.7,
-      "waveDirectionDeg": 85,
-      "wavePeriodS": 4.1,
-      "swellHeightM": 0.4
+      "observedAt": "2026-10-17T20:30",
+      "windSpeedKn": 14.5,
+      "windDirectionDeg": 78,
+      "temperatureC": 21.2,
+      "waveHeightM": 0.9,
+      "waveDirectionDeg": 87,
+      "wavePeriodS": 4.5,
+      "swellHeightM": 0.5
     },
     "감천항": {
       "latitude": 35.05,
       "longitude": 129.01,
-      "observedAt": "2026-10-17T16:15",
-      "windSpeedKn": 16.0,
-      "windDirectionDeg": 74,
-      "temperatureC": 22.5,
-      "waveHeightM": 0.94,
-      "waveDirectionDeg": 76,
-      "wavePeriodS": 4.3,
-      "swellHeightM": 0.14
+      "observedAt": "2026-10-17T20:30",
+      "windSpeedKn": 17.9,
+      "windDirectionDeg": 81,
+      "temperatureC": 21.6,
+      "waveHeightM": 1.16,
+      "waveDirectionDeg": 79,
+      "wavePeriodS": 4.65,
+      "swellHeightM": 0.12
     },
     "다대포항": {
       "latitude": 35.04,
       "longitude": 128.97,
-      "observedAt": "2026-10-17T16:15",
-      "windSpeedKn": 16.0,
-      "windDirectionDeg": 74,
-      "temperatureC": 22.1,
-      "waveHeightM": 0.88,
-      "waveDirectionDeg": 79,
-      "wavePeriodS": 4.0,
-      "swellHeightM": 0.1
+      "observedAt": "2026-10-17T20:30",
+      "windSpeedKn": 17.9,
+      "windDirectionDeg": 81,
+      "temperatureC": 21.2,
+      "waveHeightM": 1.08,
+      "waveDirectionDeg": 82,
+      "wavePeriodS": 4.4,
+      "swellHeightM": 0.08
     },
     "남항": {
       "latitude": 35.08,
       "longitude": 129.03,
-      "observedAt": "2026-10-17T16:15",
-      "windSpeedKn": 10.0,
-      "windDirectionDeg": 75,
-      "temperatureC": 22.3,
-      "waveHeightM": 0.94,
-      "waveDirectionDeg": 76,
-      "wavePeriodS": 4.3,
-      "swellHeightM": 0.14
+      "observedAt": "2026-10-17T20:30",
+      "windSpeedKn": 10.9,
+      "windDirectionDeg": 80,
+      "temperatureC": 20.8,
+      "waveHeightM": 1.16,
+      "waveDirectionDeg": 79,
+      "wavePeriodS": 4.65,
+      "swellHeightM": 0.12
     },
     "영도 크루즈터미널": {
       "latitude": 35.08,
       "longitude": 129.07,
-      "observedAt": "2026-10-17T16:15",
-      "windSpeedKn": 12.9,
-      "windDirectionDeg": 72,
-      "temperatureC": 22.0,
-      "waveHeightM": 0.94,
-      "waveDirectionDeg": 76,
-      "wavePeriodS": 4.3,
-      "swellHeightM": 0.14
+      "observedAt": "2026-10-17T20:30",
+      "windSpeedKn": 14.5,
+      "windDirectionDeg": 78,
+      "temperatureC": 20.8,
+      "waveHeightM": 1.16,
+      "waveDirectionDeg": 79,
+      "wavePeriodS": 4.65,
+      "swellHeightM": 0.12
     }
   },
   "weatherSource": "Open-Meteo Marine 실시간 관측/예보"
