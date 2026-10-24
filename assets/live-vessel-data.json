@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T18:11:28+09:00",
+  "updatedAt": "2026-10-24T22:20:04+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
   "records": [
@@ -299,6 +299,19 @@
       "departurePort": "울산",
       "nextPort": "",
       "destinationPort": "",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "오션베스트",
+      "callSign": "970838",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "광양",
+      "nextPort": "기타항",
+      "destinationPort": "진해",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -639,25 +652,12 @@
       "destinationPort": "울산",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "PANSTAR MIRACLE",
-      "callSign": "HOA5934",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "OSAKA",
-      "nextPort": "OSAKA",
-      "destinationPort": "OSAKA",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
     }
   ],
   "traffic": {
     "source": "한국해양교통안전공단_실시간 교통정보",
     "endpoint": "https://apis.data.go.kr/B554035/realtime/get_realtime",
-    "updatedAt": "2026-10-24T18:11:28+09:00",
+    "updatedAt": "2026-10-24T22:20:04+09:00",
     "records": [
       {
         "latitude": null,
@@ -4667,74 +4667,74 @@
     "부산신항": {
       "latitude": 35.05,
       "longitude": 128.83,
-      "observedAt": "2026-10-24T18:00",
-      "windSpeedKn": 11.6,
-      "windDirectionDeg": 10,
-      "temperatureC": 18.9,
-      "waveHeightM": 0.62,
-      "waveDirectionDeg": 78,
-      "wavePeriodS": 4.75,
-      "swellHeightM": 0.48
+      "observedAt": "2026-10-24T22:15",
+      "windSpeedKn": 13.1,
+      "windDirectionDeg": 41,
+      "temperatureC": 18.5,
+      "waveHeightM": 0.58,
+      "waveDirectionDeg": 83,
+      "wavePeriodS": 5.2,
+      "swellHeightM": 0.5
     },
     "북항": {
       "latitude": 35.11,
       "longitude": 129.04,
-      "observedAt": "2026-10-24T18:00",
-      "windSpeedKn": 10.6,
-      "windDirectionDeg": 18,
-      "temperatureC": 19.4,
-      "waveHeightM": 0.82,
+      "observedAt": "2026-10-24T22:15",
+      "windSpeedKn": 11.3,
+      "windDirectionDeg": 31,
+      "temperatureC": 18.8,
+      "waveHeightM": 0.8,
       "waveDirectionDeg": 86,
-      "wavePeriodS": 5.6,
-      "swellHeightM": 0.7
+      "wavePeriodS": 5.9,
+      "swellHeightM": 0.68
     },
     "감천항": {
       "latitude": 35.05,
       "longitude": 129.01,
-      "observedAt": "2026-10-24T18:00",
-      "windSpeedKn": 12.4,
-      "windDirectionDeg": 19,
-      "temperatureC": 19.8,
-      "waveHeightM": 1.16,
-      "waveDirectionDeg": 81,
-      "wavePeriodS": 6.65,
-      "swellHeightM": 0.66
+      "observedAt": "2026-10-24T22:15",
+      "windSpeedKn": 13.8,
+      "windDirectionDeg": 36,
+      "temperatureC": 19.3,
+      "waveHeightM": 1.1,
+      "waveDirectionDeg": 84,
+      "wavePeriodS": 6.9,
+      "swellHeightM": 0.76
     },
     "다대포항": {
       "latitude": 35.04,
       "longitude": 128.97,
-      "observedAt": "2026-10-24T18:00",
-      "windSpeedKn": 12.4,
-      "windDirectionDeg": 19,
-      "temperatureC": 19.4,
-      "waveHeightM": 0.98,
-      "waveDirectionDeg": 83,
-      "wavePeriodS": 6.3,
-      "swellHeightM": 0.62
+      "observedAt": "2026-10-24T22:15",
+      "windSpeedKn": 13.8,
+      "windDirectionDeg": 36,
+      "temperatureC": 18.9,
+      "waveHeightM": 0.92,
+      "waveDirectionDeg": 90,
+      "wavePeriodS": 6.65,
+      "swellHeightM": 0.68
     },
     "남항": {
       "latitude": 35.08,
       "longitude": 129.03,
-      "observedAt": "2026-10-24T18:00",
-      "windSpeedKn": 7.9,
-      "windDirectionDeg": 17,
-      "temperatureC": 19.1,
-      "waveHeightM": 1.16,
-      "waveDirectionDeg": 81,
-      "wavePeriodS": 6.65,
-      "swellHeightM": 0.66
+      "observedAt": "2026-10-24T22:15",
+      "windSpeedKn": 9.0,
+      "windDirectionDeg": 39,
+      "temperatureC": 18.6,
+      "waveHeightM": 1.1,
+      "waveDirectionDeg": 84,
+      "wavePeriodS": 6.9,
+      "swellHeightM": 0.76
     },
     "영도 크루즈터미널": {
       "latitude": 35.08,
       "longitude": 129.07,
-      "observedAt": "2026-10-24T18:00",
-      "windSpeedKn": 10.6,
-      "windDirectionDeg": 18,
-      "temperatureC": 19.1,
-      "waveHeightM": 1.16,
-      "waveDirectionDeg": 81,
-      "wavePeriodS": 6.65,
-      "swellHeightM": 0.66
+      "observedAt": "2026-10-24T22:15",
+      "windSpeedKn": 11.3,
+      "windDirectionDeg": 31,
+      "temperatureC": 18.4,
+      "waveHeightM": 1.1,
+      "waveDirectionDeg": 84,
+      "wavePeriodS": 6.9,
+      "swellHeightM": 0.76
     }
   },
   "weatherSource": "Open-Meteo Marine 실시간 관측/예보"
