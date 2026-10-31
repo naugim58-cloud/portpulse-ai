@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T03:50:34+09:00",
+  "updatedAt": "2026-11-01T06:57:07+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
   "records": [
@@ -187,27 +187,14 @@
     },
     {
       "portName": "부산",
-      "vesselName": "아람",
-      "callSign": "176801",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "여수",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
       "vesselName": "MAIZURU KAZENOMAI",
       "callSign": "A8MA8",
       "entryType": "",
       "entryAt": "",
       "departureAt": "",
       "departurePort": "NAGASAKI",
-      "nextPort": "",
-      "destinationPort": "",
+      "nextPort": "NEWCASTLE",
+      "destinationPort": "NEWCASTLE",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -325,6 +312,19 @@
       "departurePort": "광양",
       "nextPort": "HUANGPU PT",
       "destinationPort": "HUANGPU PT",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "아람",
+      "callSign": "176801",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "여수",
+      "nextPort": "",
+      "destinationPort": "",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -577,19 +577,6 @@
     },
     {
       "portName": "부산",
-      "vesselName": "C HAMBURG",
-      "callSign": "D5WM7",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "NINGBO",
-      "nextPort": "NEW YORK",
-      "destinationPort": "NEW YORK",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
       "vesselName": "MOJO",
       "callSign": "V7UC3",
       "entryType": "",
@@ -652,12 +639,25 @@
       "destinationPort": "",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "WAN MING GONG ZHENG",
+      "callSign": "J5AR1",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "VANINO",
+      "nextPort": "",
+      "destinationPort": "",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
     }
   ],
   "traffic": {
     "source": "한국해양교통안전공단_실시간 교통정보",
     "endpoint": "https://apis.data.go.kr/B554035/realtime/get_realtime",
-    "updatedAt": "2026-11-01T03:50:34+09:00",
+    "updatedAt": "2026-11-01T06:57:07+09:00",
     "records": [
       {
         "latitude": null,
@@ -4667,74 +4667,74 @@
     "부산신항": {
       "latitude": 35.05,
       "longitude": 128.83,
-      "observedAt": "2026-11-01T03:45",
-      "windSpeedKn": 4.6,
-      "windDirectionDeg": 327,
-      "temperatureC": 14.5,
+      "observedAt": "2026-11-01T06:45",
+      "windSpeedKn": 5.2,
+      "windDirectionDeg": 22,
+      "temperatureC": 13.4,
       "waveHeightM": 0.08,
-      "waveDirectionDeg": 217,
-      "wavePeriodS": 3.5,
-      "swellHeightM": 0.08
+      "waveDirectionDeg": 182,
+      "wavePeriodS": 4.2,
+      "swellHeightM": 0.04
     },
     "북항": {
       "latitude": 35.11,
       "longitude": 129.04,
-      "observedAt": "2026-11-01T03:45",
-      "windSpeedKn": 6.7,
-      "windDirectionDeg": 311,
-      "temperatureC": 13.2,
+      "observedAt": "2026-11-01T06:45",
+      "windSpeedKn": 6.1,
+      "windDirectionDeg": 329,
+      "temperatureC": 12.7,
       "waveHeightM": 0.14,
-      "waveDirectionDeg": 198,
-      "wavePeriodS": 4.4,
-      "swellHeightM": 0.12
+      "waveDirectionDeg": 131,
+      "wavePeriodS": 5.6,
+      "swellHeightM": 0.1
     },
     "감천항": {
       "latitude": 35.05,
       "longitude": 129.01,
-      "observedAt": "2026-11-01T03:45",
-      "windSpeedKn": 9.0,
-      "windDirectionDeg": 330,
-      "temperatureC": 13.7,
-      "waveHeightM": 0.2,
-      "waveDirectionDeg": 281,
-      "wavePeriodS": 4.2,
-      "swellHeightM": 0.14
+      "observedAt": "2026-11-01T06:45",
+      "windSpeedKn": 8.6,
+      "windDirectionDeg": 342,
+      "temperatureC": 13.1,
+      "waveHeightM": 0.18,
+      "waveDirectionDeg": 44,
+      "wavePeriodS": 5.9,
+      "swellHeightM": 0.12
     },
     "다대포항": {
       "latitude": 35.04,
       "longitude": 128.97,
-      "observedAt": "2026-11-01T03:45",
-      "windSpeedKn": 9.0,
-      "windDirectionDeg": 330,
-      "temperatureC": 13.3,
+      "observedAt": "2026-11-01T06:45",
+      "windSpeedKn": 8.6,
+      "windDirectionDeg": 342,
+      "temperatureC": 12.7,
       "waveHeightM": 0.14,
-      "waveDirectionDeg": 213,
-      "wavePeriodS": 4.0,
-      "swellHeightM": 0.12
+      "waveDirectionDeg": 150,
+      "wavePeriodS": 5.35,
+      "swellHeightM": 0.1
     },
     "남항": {
       "latitude": 35.08,
       "longitude": 129.03,
-      "observedAt": "2026-11-01T03:45",
-      "windSpeedKn": 6.0,
-      "windDirectionDeg": 327,
-      "temperatureC": 12.2,
-      "waveHeightM": 0.2,
-      "waveDirectionDeg": 281,
-      "wavePeriodS": 4.2,
-      "swellHeightM": 0.14
+      "observedAt": "2026-11-01T06:45",
+      "windSpeedKn": 5.6,
+      "windDirectionDeg": 340,
+      "temperatureC": 11.8,
+      "waveHeightM": 0.18,
+      "waveDirectionDeg": 44,
+      "wavePeriodS": 5.9,
+      "swellHeightM": 0.12
     },
     "영도 크루즈터미널": {
       "latitude": 35.08,
       "longitude": 129.07,
-      "observedAt": "2026-11-01T03:45",
-      "windSpeedKn": 6.7,
-      "windDirectionDeg": 311,
-      "temperatureC": 12.9,
-      "waveHeightM": 0.2,
-      "waveDirectionDeg": 281,
-      "wavePeriodS": 4.2,
-      "swellHeightM": 0.14
+      "observedAt": "2026-11-01T06:45",
+      "windSpeedKn": 6.1,
+      "windDirectionDeg": 329,
+      "temperatureC": 12.4,
+      "waveHeightM": 0.18,
+      "waveDirectionDeg": 44,
+      "wavePeriodS": 5.9,
+      "swellHeightM": 0.12
     }
   },
   "weatherSource": "Open-Meteo Marine 실시간 관측/예보"
