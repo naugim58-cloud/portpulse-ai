@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T00:58:33+09:00",
+  "updatedAt": "2026-11-05T06:47:01+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
   "records": [
@@ -265,19 +265,6 @@
     },
     {
       "portName": "부산",
-      "vesselName": "UTE",
-      "callSign": "5LDJ8",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "XIAMEN",
-      "nextPort": "TIANJIN XINGANG PT",
-      "destinationPort": "TIANJIN XINGANG PT",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
       "vesselName": "CS BEST",
       "callSign": "9V9357",
       "entryType": "",
@@ -390,6 +377,19 @@
       "departurePort": "UBE",
       "nextPort": "",
       "destinationPort": "",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "UTE",
+      "callSign": "5LDJ8",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "XIAMEN",
+      "nextPort": "TIANJIN XINGANG PT",
+      "destinationPort": "TIANJIN XINGANG PT",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -525,19 +525,6 @@
     },
     {
       "portName": "부산",
-      "vesselName": "SEASPAN LINGUE",
-      "callSign": "9VMS6",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "DALIAN",
-      "nextPort": "TIANJIN XINGANG PT",
-      "destinationPort": "TIANJIN XINGANG PT",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
       "vesselName": "FULL LOAD NO.518",
       "callSign": "BL2147",
       "entryType": "",
@@ -559,6 +546,19 @@
       "departurePort": "여수",
       "nextPort": "울산",
       "destinationPort": "울산",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "SEASPAN LINGUE",
+      "callSign": "9VMS6",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "DALIAN",
+      "nextPort": "TIANJIN XINGANG PT",
+      "destinationPort": "TIANJIN XINGANG PT",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -657,7 +657,7 @@
   "traffic": {
     "source": "한국해양교통안전공단_실시간 교통정보",
     "endpoint": "https://apis.data.go.kr/B554035/realtime/get_realtime",
-    "updatedAt": "2026-11-05T00:58:33+09:00",
+    "updatedAt": "2026-11-05T06:47:01+09:00",
     "records": [
       {
         "latitude": null,
@@ -4667,74 +4667,74 @@
     "부산신항": {
       "latitude": 35.05,
       "longitude": 128.83,
-      "observedAt": "2026-11-05T00:45",
-      "windSpeedKn": 2.5,
-      "windDirectionDeg": 129,
-      "temperatureC": 16.8,
-      "waveHeightM": 0.4,
-      "waveDirectionDeg": 101,
-      "wavePeriodS": 3.75,
-      "swellHeightM": 0.4
+      "observedAt": "2026-11-05T06:45",
+      "windSpeedKn": 9.3,
+      "windDirectionDeg": 74,
+      "temperatureC": 16.9,
+      "waveHeightM": 0.52,
+      "waveDirectionDeg": 111,
+      "wavePeriodS": 3.35,
+      "swellHeightM": 0.24
     },
     "북항": {
       "latitude": 35.11,
       "longitude": 129.04,
-      "observedAt": "2026-11-05T00:45",
-      "windSpeedKn": 4.9,
-      "windDirectionDeg": 185,
-      "temperatureC": 17.1,
-      "waveHeightM": 0.52,
-      "waveDirectionDeg": 100,
-      "wavePeriodS": 4.25,
-      "swellHeightM": 0.48
+      "observedAt": "2026-11-05T06:45",
+      "windSpeedKn": 8.8,
+      "windDirectionDeg": 104,
+      "temperatureC": 17.6,
+      "waveHeightM": 0.58,
+      "waveDirectionDeg": 112,
+      "wavePeriodS": 3.75,
+      "swellHeightM": 0.42
     },
     "감천항": {
       "latitude": 35.05,
       "longitude": 129.01,
-      "observedAt": "2026-11-05T00:45",
-      "windSpeedKn": 5.5,
-      "windDirectionDeg": 182,
-      "temperatureC": 17.7,
-      "waveHeightM": 0.6,
-      "waveDirectionDeg": 92,
-      "wavePeriodS": 4.35,
-      "swellHeightM": 0.58
+      "observedAt": "2026-11-05T06:45",
+      "windSpeedKn": 12.5,
+      "windDirectionDeg": 111,
+      "temperatureC": 18.3,
+      "waveHeightM": 0.78,
+      "waveDirectionDeg": 110,
+      "wavePeriodS": 3.75,
+      "swellHeightM": 0.3
     },
     "다대포항": {
       "latitude": 35.04,
       "longitude": 128.97,
-      "observedAt": "2026-11-05T00:45",
-      "windSpeedKn": 5.5,
-      "windDirectionDeg": 182,
-      "temperatureC": 17.3,
-      "waveHeightM": 0.54,
-      "waveDirectionDeg": 98,
-      "wavePeriodS": 4.15,
-      "swellHeightM": 0.52
+      "observedAt": "2026-11-05T06:45",
+      "windSpeedKn": 12.5,
+      "windDirectionDeg": 111,
+      "temperatureC": 17.9,
+      "waveHeightM": 0.7,
+      "waveDirectionDeg": 112,
+      "wavePeriodS": 3.6,
+      "swellHeightM": 0.24
     },
     "남항": {
       "latitude": 35.08,
       "longitude": 129.03,
-      "observedAt": "2026-11-05T00:45",
-      "windSpeedKn": 1.6,
-      "windDirectionDeg": 210,
-      "temperatureC": 15.8,
-      "waveHeightM": 0.6,
-      "waveDirectionDeg": 92,
-      "wavePeriodS": 4.35,
-      "swellHeightM": 0.58
+      "observedAt": "2026-11-05T06:45",
+      "windSpeedKn": 6.6,
+      "windDirectionDeg": 97,
+      "temperatureC": 17.0,
+      "waveHeightM": 0.78,
+      "waveDirectionDeg": 110,
+      "wavePeriodS": 3.75,
+      "swellHeightM": 0.3
     },
     "영도 크루즈터미널": {
       "latitude": 35.08,
       "longitude": 129.07,
-      "observedAt": "2026-11-05T00:45",
-      "windSpeedKn": 4.9,
-      "windDirectionDeg": 185,
-      "temperatureC": 16.8,
-      "waveHeightM": 0.6,
-      "waveDirectionDeg": 92,
-      "wavePeriodS": 4.35,
-      "swellHeightM": 0.58
+      "observedAt": "2026-11-05T06:45",
+      "windSpeedKn": 8.8,
+      "windDirectionDeg": 104,
+      "temperatureC": 17.2,
+      "waveHeightM": 0.78,
+      "waveDirectionDeg": 110,
+      "wavePeriodS": 3.75,
+      "swellHeightM": 0.3
     }
   },
   "weatherSource": "Open-Meteo Marine 실시간 관측/예보"
