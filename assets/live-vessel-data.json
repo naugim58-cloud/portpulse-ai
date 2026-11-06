@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T02:05:16+09:00",
+  "updatedAt": "2026-11-07T07:03:13+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
   "records": [
@@ -76,8 +76,8 @@
       "entryAt": "",
       "departureAt": "",
       "departurePort": "VANINO",
-      "nextPort": "",
-      "destinationPort": "",
+      "nextPort": "HUANGHUA PT",
+      "destinationPort": "HUANGHUA PT",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -486,19 +486,6 @@
     },
     {
       "portName": "부산",
-      "vesselName": "MSC RICCARDA II",
-      "callSign": "CQIX6",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "VLADIVOSTOK",
-      "nextPort": "VLADIVOSTOK",
-      "destinationPort": "VLADIVOSTOK",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
       "vesselName": "팬스타 쓰시마 링크",
       "callSign": "D7DZ",
       "entryType": "",
@@ -564,6 +551,19 @@
     },
     {
       "portName": "부산",
+      "vesselName": "MSC RICCARDA II",
+      "callSign": "CQIX6",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "VLADIVOSTOK",
+      "nextPort": "VLADIVOSTOK",
+      "destinationPort": "VLADIVOSTOK",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
       "vesselName": "노바",
       "callSign": "D7LI",
       "entryType": "",
@@ -598,6 +598,19 @@
       "departurePort": "OCEAN DISTRICT",
       "nextPort": "",
       "destinationPort": "",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "SITC SHANDONG",
+      "callSign": "VRNQ7",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "NAGOYA, AICHI",
+      "nextPort": "SHANGHAI",
+      "destinationPort": "LAEM CHABANG",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -639,25 +652,12 @@
       "destinationPort": "HONG KONG",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "PANSTAR",
-      "callSign": "V7EG4",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "HONG KONG",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
     }
   ],
   "traffic": {
     "source": "한국해양교통안전공단_실시간 교통정보",
     "endpoint": "https://apis.data.go.kr/B554035/realtime/get_realtime",
-    "updatedAt": "2026-11-07T02:05:16+09:00",
+    "updatedAt": "2026-11-07T07:03:13+09:00",
     "records": [
       {
         "latitude": null,
@@ -4667,74 +4667,74 @@
     "부산신항": {
       "latitude": 35.05,
       "longitude": 128.83,
-      "observedAt": "2026-11-07T02:00",
-      "windSpeedKn": 14.5,
+      "observedAt": "2026-11-07T07:00",
+      "windSpeedKn": 16.8,
       "windDirectionDeg": 330,
-      "temperatureC": 7.2,
-      "waveHeightM": 0.34,
-      "waveDirectionDeg": 337,
-      "wavePeriodS": 2.55,
-      "swellHeightM": 0.06
+      "temperatureC": 6.6,
+      "waveHeightM": 0.36,
+      "waveDirectionDeg": 344,
+      "wavePeriodS": 2.7,
+      "swellHeightM": 0.08
     },
     "북항": {
       "latitude": 35.11,
       "longitude": 129.04,
-      "observedAt": "2026-11-07T02:00",
-      "windSpeedKn": 13.8,
-      "windDirectionDeg": 322,
-      "temperatureC": 6.6,
-      "waveHeightM": 0.32,
-      "waveDirectionDeg": 338,
-      "wavePeriodS": 3.65,
-      "swellHeightM": 0.12
+      "observedAt": "2026-11-07T07:00",
+      "windSpeedKn": 15.0,
+      "windDirectionDeg": 323,
+      "temperatureC": 5.8,
+      "waveHeightM": 0.4,
+      "waveDirectionDeg": 355,
+      "wavePeriodS": 4.3,
+      "swellHeightM": 0.18
     },
     "감천항": {
       "latitude": 35.05,
       "longitude": 129.01,
-      "observedAt": "2026-11-07T02:00",
-      "windSpeedKn": 16.8,
-      "windDirectionDeg": 325,
-      "temperatureC": 7.2,
-      "waveHeightM": 0.56,
-      "waveDirectionDeg": 336,
-      "wavePeriodS": 3.65,
-      "swellHeightM": 0.14
+      "observedAt": "2026-11-07T07:00",
+      "windSpeedKn": 19.4,
+      "windDirectionDeg": 327,
+      "temperatureC": 6.5,
+      "waveHeightM": 0.66,
+      "waveDirectionDeg": 345,
+      "wavePeriodS": 4.25,
+      "swellHeightM": 0.28
     },
     "다대포항": {
       "latitude": 35.04,
       "longitude": 128.97,
-      "observedAt": "2026-11-07T02:00",
-      "windSpeedKn": 16.8,
-      "windDirectionDeg": 325,
-      "temperatureC": 6.8,
-      "waveHeightM": 0.5,
-      "waveDirectionDeg": 335,
-      "wavePeriodS": 3.15,
-      "swellHeightM": 0.12
+      "observedAt": "2026-11-07T07:00",
+      "windSpeedKn": 19.4,
+      "windDirectionDeg": 327,
+      "temperatureC": 6.1,
+      "waveHeightM": 0.56,
+      "waveDirectionDeg": 342,
+      "wavePeriodS": 3.6,
+      "swellHeightM": 0.18
     },
     "남항": {
       "latitude": 35.08,
       "longitude": 129.03,
-      "observedAt": "2026-11-07T02:00",
-      "windSpeedKn": 11.4,
-      "windDirectionDeg": 325,
-      "temperatureC": 6.0,
-      "waveHeightM": 0.56,
-      "waveDirectionDeg": 336,
-      "wavePeriodS": 3.65,
-      "swellHeightM": 0.14
+      "observedAt": "2026-11-07T07:00",
+      "windSpeedKn": 12.6,
+      "windDirectionDeg": 326,
+      "temperatureC": 5.1,
+      "waveHeightM": 0.66,
+      "waveDirectionDeg": 345,
+      "wavePeriodS": 4.25,
+      "swellHeightM": 0.28
     },
     "영도 크루즈터미널": {
       "latitude": 35.08,
       "longitude": 129.07,
-      "observedAt": "2026-11-07T02:00",
-      "windSpeedKn": 13.8,
-      "windDirectionDeg": 322,
-      "temperatureC": 6.2,
-      "waveHeightM": 0.56,
-      "waveDirectionDeg": 336,
-      "wavePeriodS": 3.65,
-      "swellHeightM": 0.14
+      "observedAt": "2026-11-07T07:00",
+      "windSpeedKn": 15.0,
+      "windDirectionDeg": 323,
+      "temperatureC": 5.4,
+      "waveHeightM": 0.66,
+      "waveDirectionDeg": 345,
+      "wavePeriodS": 4.25,
+      "swellHeightM": 0.28
     }
   },
   "weatherSource": "Open-Meteo Marine 실시간 관측/예보"
