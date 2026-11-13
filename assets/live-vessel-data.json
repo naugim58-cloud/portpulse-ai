@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T02:37:33+09:00",
+  "updatedAt": "2026-11-14T07:51:12+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
   "records": [
@@ -115,8 +115,8 @@
       "entryAt": "",
       "departureAt": "",
       "departurePort": "SINGAPORE",
-      "nextPort": "TOKYO",
-      "destinationPort": "TOKYO",
+      "nextPort": "NAGOYA, AICHI",
+      "destinationPort": "NAGOYA, AICHI",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -657,7 +657,7 @@
   "traffic": {
     "source": "한국해양교통안전공단_실시간 교통정보",
     "endpoint": "https://apis.data.go.kr/B554035/realtime/get_realtime",
-    "updatedAt": "2026-11-14T02:37:33+09:00",
+    "updatedAt": "2026-11-14T07:51:12+09:00",
     "records": [
       {
         "latitude": null,
@@ -4665,76 +4665,22 @@
   },
   "weather": {
     "부산신항": {
-      "latitude": 35.05,
-      "longitude": 128.83,
-      "observedAt": "2026-11-14T02:30",
-      "windSpeedKn": 6.4,
-      "windDirectionDeg": 151,
-      "temperatureC": 16.0,
-      "waveHeightM": 0.04,
-      "waveDirectionDeg": 88,
-      "wavePeriodS": 4.5,
-      "swellHeightM": 0.04
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "북항": {
-      "latitude": 35.11,
-      "longitude": 129.04,
-      "observedAt": "2026-11-14T02:30",
-      "windSpeedKn": 3.3,
-      "windDirectionDeg": 183,
-      "temperatureC": 15.6,
-      "waveHeightM": 0.06,
-      "waveDirectionDeg": 73,
-      "wavePeriodS": 5.05,
-      "swellHeightM": 0.04
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "감천항": {
-      "latitude": 35.05,
-      "longitude": 129.01,
-      "observedAt": "2026-11-14T02:30",
-      "windSpeedKn": 5.8,
-      "windDirectionDeg": 176,
-      "temperatureC": 16.6,
-      "waveHeightM": 0.08,
-      "waveDirectionDeg": 58,
-      "wavePeriodS": 5.35,
-      "swellHeightM": 0.08
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "다대포항": {
-      "latitude": 35.04,
-      "longitude": 128.97,
-      "observedAt": "2026-11-14T02:30",
-      "windSpeedKn": 5.8,
-      "windDirectionDeg": 176,
-      "temperatureC": 16.2,
-      "waveHeightM": 0.06,
-      "waveDirectionDeg": 71,
-      "wavePeriodS": 5.1,
-      "swellHeightM": 0.04
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "남항": {
-      "latitude": 35.08,
-      "longitude": 129.03,
-      "observedAt": "2026-11-14T02:30",
-      "windSpeedKn": 3.1,
-      "windDirectionDeg": 158,
-      "temperatureC": 15.1,
-      "waveHeightM": 0.08,
-      "waveDirectionDeg": 58,
-      "wavePeriodS": 5.35,
-      "swellHeightM": 0.08
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "영도 크루즈터미널": {
-      "latitude": 35.08,
-      "longitude": 129.07,
-      "observedAt": "2026-11-14T02:30",
-      "windSpeedKn": 3.3,
-      "windDirectionDeg": 183,
-      "temperatureC": 15.3,
-      "waveHeightM": 0.08,
-      "waveDirectionDeg": 58,
-      "wavePeriodS": 5.35,
-      "swellHeightM": 0.08
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     }
   },
   "weatherSource": "Open-Meteo Marine 실시간 관측/예보"
