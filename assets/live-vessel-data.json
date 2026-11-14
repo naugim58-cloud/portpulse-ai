@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T00:59:39+09:00",
+  "updatedAt": "2026-11-15T05:35:10+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
   "records": [
@@ -330,19 +330,6 @@
     },
     {
       "portName": "부산",
-      "vesselName": "MSC CALYPSO",
-      "callSign": "5LIV2",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "HONG KONG",
-      "nextPort": "NINGBO",
-      "destinationPort": "NINGBO",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
       "vesselName": "CMA CGM MERCURY",
       "callSign": "9HA6347",
       "entryType": "",
@@ -369,6 +356,19 @@
     },
     {
       "portName": "부산",
+      "vesselName": "MSC CALYPSO",
+      "callSign": "5LIV2",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "HONG KONG",
+      "nextPort": "NINGBO",
+      "destinationPort": "NINGBO",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
       "vesselName": "TAIHO MARU",
       "callSign": "3FSL8",
       "entryType": "",
@@ -384,6 +384,19 @@
       "portName": "부산",
       "vesselName": "부광호",
       "callSign": "190008",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "울산",
+      "nextPort": "울산",
+      "destinationPort": "울산",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "카리스(CHARIS)",
+      "callSign": "230007",
       "entryType": "",
       "entryAt": "",
       "departureAt": "",
@@ -639,25 +652,12 @@
       "destinationPort": "",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "ANGARA",
-      "callSign": "9LU2664",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "VLADIVOSTOK",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
     }
   ],
   "traffic": {
     "source": "한국해양교통안전공단_실시간 교통정보",
     "endpoint": "https://apis.data.go.kr/B554035/realtime/get_realtime",
-    "updatedAt": "2026-11-15T00:59:39+09:00",
+    "updatedAt": "2026-11-15T05:35:10+09:00",
     "records": [
       {
         "latitude": null,
@@ -4665,76 +4665,22 @@
   },
   "weather": {
     "부산신항": {
-      "latitude": 35.05,
-      "longitude": 128.83,
-      "observedAt": "2026-11-15T00:45",
-      "windSpeedKn": 8.0,
-      "windDirectionDeg": 34,
-      "temperatureC": 14.5,
-      "waveHeightM": 0.22,
-      "waveDirectionDeg": 173,
-      "wavePeriodS": 3.8,
-      "swellHeightM": 0.2
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "북항": {
-      "latitude": 35.11,
-      "longitude": 129.04,
-      "observedAt": "2026-11-15T00:45",
-      "windSpeedKn": 7.0,
-      "windDirectionDeg": 27,
-      "temperatureC": 14.7,
-      "waveHeightM": 0.36,
-      "waveDirectionDeg": 183,
-      "wavePeriodS": 4.25,
-      "swellHeightM": 0.34
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "감천항": {
-      "latitude": 35.05,
-      "longitude": 129.01,
-      "observedAt": "2026-11-15T00:45",
-      "windSpeedKn": 8.0,
-      "windDirectionDeg": 37,
-      "temperatureC": 15.3,
-      "waveHeightM": 0.42,
-      "waveDirectionDeg": 184,
-      "wavePeriodS": 4.2,
-      "swellHeightM": 0.38
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "다대포항": {
-      "latitude": 35.04,
-      "longitude": 128.97,
-      "observedAt": "2026-11-15T00:45",
-      "windSpeedKn": 8.0,
-      "windDirectionDeg": 37,
-      "temperatureC": 14.9,
-      "waveHeightM": 0.36,
-      "waveDirectionDeg": 181,
-      "wavePeriodS": 4.1,
-      "swellHeightM": 0.32
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "남항": {
-      "latitude": 35.08,
-      "longitude": 129.03,
-      "observedAt": "2026-11-15T00:45",
-      "windSpeedKn": 5.4,
-      "windDirectionDeg": 38,
-      "temperatureC": 14.5,
-      "waveHeightM": 0.42,
-      "waveDirectionDeg": 184,
-      "wavePeriodS": 4.2,
-      "swellHeightM": 0.38
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "영도 크루즈터미널": {
-      "latitude": 35.08,
-      "longitude": 129.07,
-      "observedAt": "2026-11-15T00:45",
-      "windSpeedKn": 7.0,
-      "windDirectionDeg": 27,
-      "temperatureC": 14.4,
-      "waveHeightM": 0.42,
-      "waveDirectionDeg": 184,
-      "wavePeriodS": 4.2,
-      "swellHeightM": 0.38
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     }
   },
   "weatherSource": "Open-Meteo Marine 실시간 관측/예보"
