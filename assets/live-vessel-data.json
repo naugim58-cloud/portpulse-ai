@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T12:03:47+09:00",
+  "updatedAt": "2026-11-16T20:00:14+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
   "records": [
@@ -104,6 +104,19 @@
       "departurePort": "울산",
       "nextPort": "울산",
       "destinationPort": "울산",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "제7001신정호",
+      "callSign": "971598",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "",
+      "nextPort": "",
+      "destinationPort": "",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -479,8 +492,8 @@
       "entryAt": "",
       "departureAt": "",
       "departurePort": "NANTONG",
-      "nextPort": "",
-      "destinationPort": "",
+      "nextPort": "OCEAN DISTRICT",
+      "destinationPort": "OCEAN DISTRICT",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -622,8 +635,8 @@
       "entryAt": "",
       "departureAt": "",
       "departurePort": "NAGOYA, AICHI",
-      "nextPort": "",
-      "destinationPort": "",
+      "nextPort": "인천",
+      "destinationPort": "YANTAI",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -639,25 +652,12 @@
       "destinationPort": "SAKAIMINATO",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "HOLLY PIONEER",
-      "callSign": "H3CQ",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "NAKHODKA",
-      "nextPort": "",
-      "destinationPort": "",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
     }
   ],
   "traffic": {
     "source": "한국해양교통안전공단_실시간 교통정보",
     "endpoint": "https://apis.data.go.kr/B554035/realtime/get_realtime",
-    "updatedAt": "2026-11-16T12:03:47+09:00",
+    "updatedAt": "2026-11-16T20:00:14+09:00",
     "records": [
       {
         "latitude": null,
@@ -4665,22 +4665,76 @@
   },
   "weather": {
     "부산신항": {
-      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
+      "latitude": 35.05,
+      "longitude": 128.83,
+      "observedAt": "2026-11-16T20:00",
+      "windSpeedKn": 10.2,
+      "windDirectionDeg": 47,
+      "temperatureC": 16.3,
+      "waveHeightM": 0.74,
+      "waveDirectionDeg": 78,
+      "wavePeriodS": 4.45,
+      "swellHeightM": 0.46
     },
     "북항": {
-      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
+      "latitude": 35.11,
+      "longitude": 129.04,
+      "observedAt": "2026-11-16T20:00",
+      "windSpeedKn": 10.6,
+      "windDirectionDeg": 72,
+      "temperatureC": 17.3,
+      "waveHeightM": 0.98,
+      "waveDirectionDeg": 80,
+      "wavePeriodS": 5.5,
+      "swellHeightM": 0.84
     },
     "감천항": {
-      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
+      "latitude": 35.05,
+      "longitude": 129.01,
+      "observedAt": "2026-11-16T20:00",
+      "windSpeedKn": 13.7,
+      "windDirectionDeg": 74,
+      "temperatureC": 17.9,
+      "waveHeightM": 1.3,
+      "waveDirectionDeg": 72,
+      "wavePeriodS": 5.6,
+      "swellHeightM": 0.64
     },
     "다대포항": {
-      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
+      "latitude": 35.04,
+      "longitude": 128.97,
+      "observedAt": "2026-11-16T20:00",
+      "windSpeedKn": 13.7,
+      "windDirectionDeg": 74,
+      "temperatureC": 17.5,
+      "waveHeightM": 1.08,
+      "waveDirectionDeg": 74,
+      "wavePeriodS": 5.2,
+      "swellHeightM": 0.58
     },
     "남항": {
-      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
+      "latitude": 35.08,
+      "longitude": 129.03,
+      "observedAt": "2026-11-16T20:00",
+      "windSpeedKn": 7.1,
+      "windDirectionDeg": 64,
+      "temperatureC": 16.6,
+      "waveHeightM": 1.3,
+      "waveDirectionDeg": 72,
+      "wavePeriodS": 5.6,
+      "swellHeightM": 0.64
     },
     "영도 크루즈터미널": {
-      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
+      "latitude": 35.08,
+      "longitude": 129.07,
+      "observedAt": "2026-11-16T20:00",
+      "windSpeedKn": 10.6,
+      "windDirectionDeg": 72,
+      "temperatureC": 17.0,
+      "waveHeightM": 1.3,
+      "waveDirectionDeg": 72,
+      "wavePeriodS": 5.6,
+      "swellHeightM": 0.64
     }
   },
   "weatherSource": "Open-Meteo Marine 실시간 관측/예보"
