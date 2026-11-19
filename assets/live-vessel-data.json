@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T04:07:34+09:00",
+  "updatedAt": "2026-11-19T10:09:31+09:00",
   "source": "해양수산부_선박운항정보",
   "endpoint": "https://apis.data.go.kr/1192000/VsslEtrynd5/Info5",
   "records": [
@@ -44,6 +44,19 @@
     },
     {
       "portName": "부산",
+      "vesselName": "조양7001",
+      "callSign": "240007",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "",
+      "nextPort": "",
+      "destinationPort": "",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
       "vesselName": "COLORADO EXPRESS",
       "callSign": "WDM2200",
       "entryType": "",
@@ -63,8 +76,8 @@
       "entryAt": "",
       "departureAt": "",
       "departurePort": "SHIMONOSEKI",
-      "nextPort": "",
-      "destinationPort": "",
+      "nextPort": "SHIMONOSEKI",
+      "destinationPort": "SHIMONOSEKI",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -128,8 +141,8 @@
       "entryAt": "",
       "departureAt": "",
       "departurePort": "TONDA",
-      "nextPort": "",
-      "destinationPort": "",
+      "nextPort": "CAI LAN",
+      "destinationPort": "CAI LAN",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -161,21 +174,8 @@
     },
     {
       "portName": "부산",
-      "vesselName": "KMTC OSAKA",
-      "callSign": "3EHZ9",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "광양",
-      "nextPort": "MANILA",
-      "destinationPort": "MANILA",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "부광호",
-      "callSign": "190008",
+      "vesselName": "해랑",
+      "callSign": "216804",
       "entryType": "",
       "entryAt": "",
       "departureAt": "",
@@ -252,14 +252,27 @@
     },
     {
       "portName": "부산",
+      "vesselName": "KMTC OSAKA",
+      "callSign": "3EHZ9",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "광양",
+      "nextPort": "MANILA",
+      "destinationPort": "MANILA",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
       "vesselName": "HAMAYUU",
       "callSign": "JM6512",
       "entryType": "",
       "entryAt": "",
       "departureAt": "",
       "departurePort": "SHIMONOSEKI",
-      "nextPort": "",
-      "destinationPort": "",
+      "nextPort": "SHIMONOSEKI",
+      "destinationPort": "SHIMONOSEKI",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -395,19 +408,6 @@
     },
     {
       "portName": "부산",
-      "vesselName": "나디 치프",
-      "callSign": "9V2531",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "VANCOUVER",
-      "nextPort": "HAKATA/FUKUOKA",
-      "destinationPort": "VANCOUVER",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
       "vesselName": "싸왓디 스피카",
       "callSign": "D8HO",
       "entryType": "",
@@ -429,6 +429,19 @@
       "departurePort": "OSAKA",
       "nextPort": "OSAKA",
       "destinationPort": "OSAKA",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "나디 치프",
+      "callSign": "9V2531",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "VANCOUVER",
+      "nextPort": "HAKATA/FUKUOKA",
+      "destinationPort": "VANCOUVER",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -551,32 +564,6 @@
     },
     {
       "portName": "부산",
-      "vesselName": "케이엠티씨기륭",
-      "callSign": "DSOF3",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "SHANGHAI",
-      "nextPort": "울산",
-      "destinationPort": "울산",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
-      "vesselName": "ULTIMA",
-      "callSign": "C6AV9",
-      "entryType": "",
-      "entryAt": "",
-      "departureAt": "",
-      "departurePort": "YANTIAN PT",
-      "nextPort": "YANTIAN PT",
-      "destinationPort": "YANTIAN PT",
-      "expectedDepartureAt": "",
-      "expectedDestinationEntryAt": ""
-    },
-    {
-      "portName": "부산",
       "vesselName": "21동방호",
       "callSign": "210003",
       "entryType": "",
@@ -598,6 +585,19 @@
       "departurePort": "울산",
       "nextPort": "울산",
       "destinationPort": "울산",
+      "expectedDepartureAt": "",
+      "expectedDestinationEntryAt": ""
+    },
+    {
+      "portName": "부산",
+      "vesselName": "ULTIMA",
+      "callSign": "C6AV9",
+      "entryType": "",
+      "entryAt": "",
+      "departureAt": "",
+      "departurePort": "YANTIAN PT",
+      "nextPort": "YANTIAN PT",
+      "destinationPort": "YANTIAN PT",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     },
@@ -642,14 +642,14 @@
     },
     {
       "portName": "부산",
-      "vesselName": "스타 스키퍼",
-      "callSign": "V7UJ2",
+      "vesselName": "케이엠티씨기륭",
+      "callSign": "DSOF3",
       "entryType": "",
       "entryAt": "",
       "departureAt": "",
-      "departurePort": "KANAZAWA",
-      "nextPort": "",
-      "destinationPort": "",
+      "departurePort": "SHANGHAI",
+      "nextPort": "울산",
+      "destinationPort": "울산",
       "expectedDepartureAt": "",
       "expectedDestinationEntryAt": ""
     }
@@ -657,7 +657,7 @@
   "traffic": {
     "source": "한국해양교통안전공단_실시간 교통정보",
     "endpoint": "https://apis.data.go.kr/B554035/realtime/get_realtime",
-    "updatedAt": "2026-11-19T04:07:34+09:00",
+    "updatedAt": "2026-11-19T10:09:31+09:00",
     "records": [
       {
         "latitude": null,
@@ -4665,76 +4665,22 @@
   },
   "weather": {
     "부산신항": {
-      "latitude": 35.05,
-      "longitude": 128.83,
-      "observedAt": "2026-11-19T04:00",
-      "windSpeedKn": 18.1,
-      "windDirectionDeg": 305,
-      "temperatureC": 7.4,
-      "waveHeightM": 0.42,
-      "waveDirectionDeg": 299,
-      "wavePeriodS": 2.8,
-      "swellHeightM": 0.1
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "북항": {
-      "latitude": 35.11,
-      "longitude": 129.04,
-      "observedAt": "2026-11-19T04:00",
-      "windSpeedKn": 10.7,
-      "windDirectionDeg": 305,
-      "temperatureC": 6.0,
-      "waveHeightM": 0.42,
-      "waveDirectionDeg": 262,
-      "wavePeriodS": 3.95,
-      "swellHeightM": 0.2
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "감천항": {
-      "latitude": 35.05,
-      "longitude": 129.01,
-      "observedAt": "2026-11-19T04:00",
-      "windSpeedKn": 14.7,
-      "windDirectionDeg": 312,
-      "temperatureC": 7.0,
-      "waveHeightM": 0.64,
-      "waveDirectionDeg": 290,
-      "wavePeriodS": 3.8,
-      "swellHeightM": 0.24
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "다대포항": {
-      "latitude": 35.04,
-      "longitude": 128.97,
-      "observedAt": "2026-11-19T04:00",
-      "windSpeedKn": 14.7,
-      "windDirectionDeg": 312,
-      "temperatureC": 6.6,
-      "waveHeightM": 0.56,
-      "waveDirectionDeg": 297,
-      "wavePeriodS": 3.45,
-      "swellHeightM": 0.18
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "남항": {
-      "latitude": 35.08,
-      "longitude": 129.03,
-      "observedAt": "2026-11-19T04:00",
-      "windSpeedKn": 9.6,
-      "windDirectionDeg": 312,
-      "temperatureC": 5.8,
-      "waveHeightM": 0.64,
-      "waveDirectionDeg": 290,
-      "wavePeriodS": 3.8,
-      "swellHeightM": 0.24
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     },
     "영도 크루즈터미널": {
-      "latitude": 35.08,
-      "longitude": 129.07,
-      "observedAt": "2026-11-19T04:00",
-      "windSpeedKn": 10.7,
-      "windDirectionDeg": 305,
-      "temperatureC": 5.7,
-      "waveHeightM": 0.64,
-      "waveDirectionDeg": 290,
-      "wavePeriodS": 3.8,
-      "swellHeightM": 0.24
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>"
     }
   },
   "weatherSource": "Open-Meteo Marine 실시간 관측/예보"
